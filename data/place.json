@@ -1,0 +1,115 @@
+{
+  "pluie_orage-1": {
+    "metadata": {
+      "label": "Pluie et orage",
+      "description": "Une ambiance apaisante de pluie avec des éclairs et le son lointain du tonnerre.",
+      "immersionList": [
+        {
+          "name": "à la cabane au bord du lac",
+          "description": "Une cabane dans la forêt avec une grande baie vitrée donnant sur un lac. Un feu réchauffe les pieds et les mains"
+        },
+        {
+          "name": "en randonnée sous une tente",
+          "description": "Installé confortablement dans une tente dans la forêt situé en plein milieu de la randonnée du Mont Tiscali, non loin des structures néolithique."
+        },
+        {
+          "name": "en voiture devant la mer",
+          "description": "Assis dans une voiture garée face à la mer, regardant la beauté de l'océan."
+        },
+        {
+          "name": "sous la pluie à Dinant",
+          "description": "Assis confortablement dans le café de l'ancien monastère à Dinant, regardant la pluie tomber sur la ville."
+        },
+        {
+          "name": "au chalet en montagne",
+          "description": "Dans un chalet en bois au milieu des montagnes, écoutant la pluie tomber"
+        },
+        {
+          "name": "au refuge de montagne isolé",
+          "description": "À l'intérieur d'un refuge de haute altitude dans les Alpes, assis près d'un poêle en fonte, écoutant l'orage gronder au-dessus des pics enneigés."
+        },
+        {
+          "name": "à la bibliothèque",
+          "description": "Installé dans un fauteuil en cuir d'une vieille bibliothèque chaleureuse, un livre à la main, écoutant la pluie frapper les hautes fenêtres."
+        }
+      ]
+    }
+  },
+  "morning-relax-1": {},
+  "sleep-relax-1": {},
+  "sleep-relax-2": {},
+  "music-luminis": {},
+  "music-underwater": {},
+  "criquets_nuit-1": {},
+  "oiseau_foret-1": {},
+  "plage-1": {},
+  "pluie_tropicale-1": {},
+  "ambiance-gong_qamdo": {},
+  "ambiance-train": {},
+  "chill-beats": {},
+  "nintendo_chill-1": {},
+  "pokemon-1": {},
+  "noise-brown": {},
+  "story-sleep_livlab": {},
+  "story-sleep_livlab_1": {},
+  "story-sleep_livlab_2": {},
+  "story-sleep_livlab_3": {},
+  "story-sleep_livlab_4-chapter_1": {},
+  "story-sleep_livlab_4-chapter_2": {},
+  "story-sleep_livlab_4-chapter_3": {},
+  "story-sleep_livlab_4-chapter_4": {},
+  "story-sleep_livlab_5-chapter_1": {},
+  "story-sleep_livlab_5-chapter_2": {},
+  "story-sleep_livlab_6": {},
+  "story-sleep_livlab_7": {},
+  "story-sleep_livlab_8": {},
+  "story-sleep_livlab_10": {},
+  "story-sleep_livlab_11": {},
+  "story-sleep_livlab_12": {},
+  "story-sleep_livlab_13": {},
+  "story-sleep_livlab_14": {},
+  "story-sleep_livlab_15": {},
+  "story-sleep_livlab_16": {},
+  "story-sleep_livlab_17": {},
+  "story-sleep_livlab_18": {},
+  "story-sleep_livlab_19": {},
+  "story-sleep_livlab_20": {},
+  "story-sleep_livlab_21": {},
+  "story-sleep_livlab_22": {},
+  "story-sleep_livlab_23": {},
+  "story-sleep_livlab_24": {},
+  "story-sleep_livlab_25": {},
+  "story-sleep_livlab_26": {},
+  "story-sleep_livlab_27": {},
+  "story-sleep_livlab_28": {},
+  "story-sleep_livlab_29": {},
+  "story-sleep_livlab_30": {},
+  "story-sleep_livlab_31": {},
+  "story-sleep_livlab_32": {},
+  "story-sleep_livlab_33": {},
+  "story-sleep_livlab_34": {},
+  "story-sleep_livlab_35": {},
+  "story-sleep_livlab_36": {},
+  "story-sleep_livlab_37": {},
+  "story-sleep_livlab_38": {},
+  "story-sleep_livlab_39": {},
+  "story-sleep_livlab_40": {},
+  "story-sleep_livlab_41": {},
+  "story-sleep_livlab_42": {},
+  "story-sleep_livlab_43": {},
+  "story-sleep_livlab_44": {},
+  "story-sleep_livlab_45": {},
+  "story-sleep_livlab_46": {},
+  "story-sleep_livlab_47": {},
+  "meditation-night_journey": {},
+  "meditation-night_journey_1": {},
+  "meditation-night_journey_2": {},
+  "meditation-night_journey_3": {},
+  "meditation-night_journey_4": {},
+  "meditation-night_journey_5": {},
+  "meditation-night_journey_6": {},
+  "meditation-night_journey_7": {},
+  "meditation-night_journey_8": {},
+  "random": {},
+  "aucun": {}
+}

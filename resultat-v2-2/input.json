@@ -1,0 +1,44 @@
+[
+  {
+    "ambiance": {
+      "label": "Pluie et orage",
+      "description": "Une ambiance apaisante de pluie avec des éclairs et le son lointain du tonnerre.",
+      "immersion": {
+        "name": "en randonnée sous une tente",
+        "description": "Installé confortablement dans une tente dans la forêt situé en plein milieu de la randonnée du Mont Tiscali, non loin des structures néolithique."
+      }
+    },
+    "theme": {
+      "label": "Star Wars",
+      "description": "Un univers de science-fiction épique où la Force, les Jedi, les Sith et une galaxie lointaine, très lointaine s'affrontent dans une lutte éternelle entre le bien et le mal.",
+      "vocabulary": [
+        "La Force",
+        "Jedi",
+        "Sith",
+        "Sabre laser",
+        "Empire Galactique",
+        "Rébellion",
+        "Hyperespace",
+        "Droïde"
+      ],
+      "microContext": {
+        "label": "Les Vaisseaux Spatiaux",
+        "description": "Une variété de véhicules utilisés pour le transport, le combat et l'exploration à travers la galaxie.",
+        "vocabulary": [
+          "Chasseur stellaire",
+          "Croiseur",
+          "Cargo",
+          "Hyperpropulsion",
+          "Navette",
+          "Transporteur",
+          "Espace lointain",
+          "Course-poursuite"
+        ]
+      }
+    },
+    "user": {
+      "person": "Léa et Vincent",
+      "sleepDuration": "7h45"
+    }
+  }
+]

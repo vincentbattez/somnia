@@ -1,0 +1,81 @@
+{
+  "version": "1.0",
+  "storyteller_output": {
+    "narrative": {
+      "arc_description": "Depuis la tente au Mont Tiscali, tu ouvres la nuit vers une galaxie paisible, puis reviens au chaud abri tandis que la pluie s’installe.",
+      "total_scenes": 3,
+      "scenes": [
+        {
+          "scene_number": 1,
+          "title": "Sous la toile, Mont Tiscali",
+          "location": "Intérieur de la tente, au milieu des pins près des structures néolithiques",
+          "atmosphere": "calme",
+          "sensory_elements": {
+            "visual": "Lueur douce filtrée par la toile, formes vagues des parois, couture qui trace un chemin",
+            "auditory": "Bruissement des pins, souffle bas de la nuit",
+            "tactile": "Tapis souple sous la paume, paroi tiède contre l’épaule",
+            "olfactory": "Odeur de terre humide, résine légère",
+            "temperature": "Tiédeur douce dans la tente, fraîcheur discrète de la nuit"
+          },
+          "narrative_text": "Dans la tente posée au Mont Tiscali, tu t’allonges près des parois. La toile filtre une lueur douce. Les roches néolithiques dorment tout près, invisibles mais présentes. Tu entends le bruissement des pins, un souffle bas dans la nuit. Sous ta main, le tapis est souple, tiède. Une odeur de terre humide monte, rassurante. Tu laisses ton regard suivre la couture qui trace un chemin calme.",
+          "meditation_hints": {
+            "breathing_anchor": "Le tracé régulier de la couture de la toile",
+            "relaxation_focus": "La tiédeur du tapis sous la main"
+          },
+          "transition_to_next": "Tu soulèves doucement l’abside, offrant à tes yeux la clairière et le ciel profond."
+        },
+        {
+          "scene_number": 2,
+          "title": "Dôme d’étoiles",
+          "location": "Clairière devant la tente, ouverture tournée vers le ciel",
+          "atmosphere": "contemplatif",
+          "sensory_elements": {
+            "visual": "Dôme noir piqué d’étoiles, constellations qui glissent",
+            "auditory": "Un hibou lointain, puis un large silence",
+            "tactile": "Herbe fraîche sous la paume, air frais sur les joues",
+            "olfactory": "Parfum vert de l’herbe",
+            "temperature": "Fraîcheur claire de la nuit"
+          },
+          "narrative_text": "Tu ouvres l’abside. Dehors, la clairière s’ouvre comme un dôme noir piqué d’étoiles. Les constellations lentement glissent; tu imagines La Force comme une brise claire qui relie chaque point. Au loin, une silhouette tranquille pourrait être un Jedi, simple veilleur. L’air est frais sur tes joues. Tu entends un hibou, puis le silence. La paume sur l’herbe, tu sens la vie tranquille du sol.",
+          "meditation_hints": {
+            "breathing_anchor": "La brise imaginaire de La Force reliant les étoiles",
+            "relaxation_focus": "La stabilité de la terre sous la main"
+          },
+          "transition_to_next": "Le ciel se voile lentement; tu refermes l’abside et reviens au nid chaud de la tente."
+        },
+        {
+          "scene_number": 3,
+          "title": "Abri de pluie",
+          "location": "Retour à l’intérieur de la tente, couchage",
+          "atmosphere": "paisible",
+          "sensory_elements": {
+            "visual": "Toile sombre, légers frémissements sur la paroi",
+            "auditory": "Gouttes qui commencent, ruissellement régulier, tonnerre très lointain",
+            "tactile": "Duvet moelleux contre la peau, vibration douce de la toile",
+            "olfactory": "Odeur claire de pluie fraîche",
+            "temperature": "Chaleur du duvet, fraîcheur humide de l’air"
+          },
+          "narrative_text": "Tu refermes doucement l’abside et reviens à la chaleur de la tente. Le ciel se voile; une première goutte touche la toile, ronde, puis une autre. Le son s’étire, régulier, comme un tambour doux. Le tonnerre, très loin, roule sans hâte. L’air sent la pluie fraîche. Tu te blottis dans le duvet, la toile vibre sous tes doigts, et la nuit devient un abri sonore.",
+          "meditation_hints": {
+            "breathing_anchor": "Le rythme régulier des gouttes sur la toile",
+            "relaxation_focus": "La chaleur moelleuse du duvet"
+          },
+          "transition_to_next": "Retour progressif au lieu de méditation, préparation du son à venir"
+        }
+      ]
+    },
+    "metadata": {
+      "total_narrative_words": 195,
+      "atmosphere_tags": ["paisible", "contemplatif", "sécurisant"],
+      "dominant_senses": ["visual", "auditory", "tactile"],
+      "spatial_coherence": "linear",
+      "connection_to_sound": "La dernière scène installe les premières gouttes, le ruissellement régulier et un tonnerre lointain, guidant naturellement vers l’ambiance pluie et orage."
+    }
+  },
+  "original_context": {
+    "theme": "Star Wars",
+    "meditation_location": "en randonnée sous une tente",
+    "sound_ambiance": "Pluie et orage",
+    "user_name": "Léa,Vincent"
+  }
+}
