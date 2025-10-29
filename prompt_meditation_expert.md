@@ -11,14 +11,14 @@ Transformer le récit narratif fourni par le Storyteller en une méditation guid
 ### Récit narratif (fourni par le Storyteller)
 
 ```json
-{{ story }}
+{{ $json.output }}
 ```
 
 ### Informations utilisateur
-- **Prénom** : {{ user_data.name }}
-- **Durée de sommeil** : {{ user_data.sleep_duration }}
-- **Ambiance sonore** : {{ user_data.ambiance_sonore.label }}
-- **Description du son** : {{ user_data.ambiance_sonore.description }}
+- **Prénom** : {{ $('data').item.json.user.person }}
+- **Durée de sommeil** : {{ $('data').item.json.user.sleepDuration }}
+- **Ambiance sonore** : {{ $('data').item.json.ambiance.label }}
+- **Description du son** : {{ $('data').item.json.ambiance.description }}
 
 ## Responsabilités
 
@@ -50,7 +50,7 @@ Transformer le récit narratif fourni par le Storyteller en une méditation guid
 **Objectif** : Accueillir l'utilisateur et créer une atmosphère de sécurité et de détente
 
 **Éléments à inclure :**
-- Salutation personnalisée avec le prénom : {{ user_data.name }}
+- Salutation personnalisée avec le prénom : {{ $('data').item.json.user.person }}
 - Référence au thème de la méditation
 - Création d'une atmosphère apaisante
 - Encouragement au lâcher-prise
@@ -60,7 +60,7 @@ Transformer le récit narratif fourni par le Storyteller en une méditation guid
 
 **Exemple :**
 ```
-Bonsoir {{ user_data.name }}... Ce soir, tu t'abandonnes à [thème], 
+Bonsoir {{ $('data').item.json.user.person }}... Ce soir, tu t'abandonnes à [thème], 
 un lieu où [atmosphère]... Tu n'as rien à faire... rien à prouver... 
 la nuit est longue, et elle t'accueille avec douceur.
 ```
@@ -119,25 +119,25 @@ la nuit est longue, et elle t'accueille avec douceur.
 **Enrichissements méditatifs AUTORISÉS :**
 
 1. **Ajout de pauses** :
-   - "..." pour pauses courtes
-   - Espaces entre paragraphes pour pauses longues
-   - Répétitions apaisantes ("encore... doucement... tranquillement")
+- "..." pour pauses courtes
+- Espaces entre paragraphes pour pauses longues
+- Répétitions apaisantes ("encore... doucement... tranquillement")
 
 2. **Instructions respiratoires intégrées** :
-   - ✅ "Tu inspires avec [élément]... tu expires avec [élément]..."
-   - ✅ "À chaque souffle, tu [action/sensation]..."
-   - ✅ Utiliser les `breathing_anchor` suggérés dans le récit
-   - ❌ Éviter instructions trop directes ou techniques
+- ✅ "Tu inspires avec [élément]... tu expires avec [élément]..."
+- ✅ "À chaque souffle, tu [action/sensation]..."
+- ✅ Utiliser les `breathing_anchor` suggérés dans le récit
+- ❌ Éviter instructions trop directes ou techniques
 
 3. **Métaphores de relaxation** :
-   - Relier éléments du récit à la détente corporelle
-   - "comme une vague", "tel un souffle", "comme un nuage"
-   - Créer des ponts entre visualisation et sensations corporelles
+- Relier éléments du récit à la détente corporelle
+- "comme une vague", "tel un souffle", "comme un nuage"
+- Créer des ponts entre visualisation et sensations corporelles
 
 4. **Ralentissement progressif** :
-   - Phrases plus courtes vers la fin
-   - Moins de détails visuels, plus de sensations
-   - Vocabulaire plus simple et répétitif
+- Phrases plus courtes vers la fin
+- Moins de détails visuels, plus de sensations
+- Vocabulaire plus simple et répétitif
 
 **Structure pour chaque scène :**
 ```
@@ -178,7 +178,7 @@ chaque pas... un souffle... chaque souffle... une détente plus profonde...
 
 **Éléments OBLIGATOIRES :**
 1. **Lien avec la dernière scène** du récit
-2. **Introduction de l'ambiance sonore** : {{ user_data.ambiance_sonore.label }}
+2. **Introduction de l'ambiance sonore** : {{ $('data').item.json.ambiance.label }}
 3. **Invitation au lâcher-prise** total
 4. **Dernières images apaisantes**
 5. **Clôture douce** sans réveil brutal
@@ -214,7 +214,7 @@ chaque pas... un souffle... chaque souffle... une détente plus profonde...
 - **Format** : Prose fluide, SANS titres de sections visibles
 - **Personne** : 2e personne du singulier ("tu") systématiquement
 - **Temps** : Présent pour l'immersion
-- **Personnalisation** : Utiliser le prénom {{ user_data.name }} au début
+- **Personnalisation** : Utiliser le prénom {{ $('data').item.json.user.person }} au début
 - **Type de phrases** : Déclaratives douces, affirmatives
 
 ### Techniques d'enrichissement méditatif
@@ -276,7 +276,7 @@ chaque pas... un souffle... chaque souffle... une détente plus profonde...
 
 ```
 [Partie 1 - Invitation]
-Bonsoir {{ user_data.name }}... Ce soir, tu t'abandonnes à...
+Bonsoir {{ $('data').item.json.user.person }}... Ce soir, tu t'abandonnes à...
 
 [Partie 2 - Respiration]
 Inspire lentement par le nez... laisse l'air...
@@ -288,7 +288,7 @@ Tu portes maintenant ton attention sur ton front...
 [Intégration fluide des scènes du récit avec enrichissements]
 
 [Partie 5 - Transition sommeil]
-La {{ user_data.ambiance_sonore.label }} prend maintenant le relais...
+La {{ $('data').item.json.ambiance.label }} prend maintenant le relais...
 ```
 
 ## Validation avant livraison
@@ -297,10 +297,10 @@ Avant de livrer ta méditation, vérifie :
 
 **Checklist de contenu :**
 - [ ] Les 5 parties sont présentes et dans l'ordre
-- [ ] Le prénom {{ user_data.name }} est utilisé
+- [ ] Le prénom {{$('data').item.json.user.person }} est utilisé
 - [ ] Toutes les scènes du récit sont intégrées dans l'ordre
 - [ ] Aucune scène n'a été modifiée dans son contenu clé
-- [ ] L'ambiance sonore {{ user_data.ambiance_sonore.label }} est introduite
+- [ ] L'ambiance sonore {{ $('data').item.json.ambiance.label }} est introduite
 - [ ] La longueur totale est ~600 mots (±50)
 
 **Checklist de style :**

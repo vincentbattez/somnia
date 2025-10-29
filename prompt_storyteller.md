@@ -9,19 +9,19 @@ Créer un récit narratif cohérent de 3-4 scènes progressives qui servira de b
 ## Données d'entrée
 
 ### Thème de la méditation
-- **Thème** : {{ theme.theme }}
-- **Description de l'univers** : {{ theme.universe }}
-- **Vocabulaire thématique disponible** : {{ theme.vocabulary.join(", ") }}
+- **Thème** : {{ $('data').item.json.theme.label }}
+- **Description de l'univers** : {{ $('data').item.json.theme.description }}
+- **Vocabulaire thématique disponible** : {{ $('data').item.json.theme.vocabulary.join(", ") }}
 
 ### Lieu et ambiance de méditation
-- **Lieu de méditation** : {{ ambiance.immersion.name }}
-- **Description de l'immersion** : {{ ambiance.immersion.description }}
-- **Ambiance sonore à venir** : {{ ambiance.label }}
-- **Description du son** : {{ ambiance.description }}
+- **Lieu de méditation** : {{ $('data').item.json.ambiance.immersion.name }}
+- **Description de l'immersion** : {{ $('data').item.json.ambiance.immersion.description }}
+- **Ambiance sonore à venir** : {{ $('data').item.json.ambiance.label }}
+- **Description du son** : {{ $('data').item.json.ambiance.description }}
 
 ### Contexte utilisateur
-- **Prénom** : {{ user.name }}
-- **Durée de sommeil** : {{ user.sleep_duration }}
+- **Prénom** : {{$('data').item.json.user.person }}
+- **Durée de sommeil** : {{ $('data').item.json.user.sleepDuration }}
 
 ## Responsabilités
 
@@ -75,18 +75,18 @@ Créer un récit narratif cohérent de 3-4 scènes progressives qui servira de b
 ### 3. Progression narrative
 
 **Scène 1 - Ancrage**
-- Commence dans le lieu de méditation ({{ ambiance.immersion.name }})
+- Commence dans le lieu de méditation ({{ $('data').item.json.ambiance.immersion.name }})
 - Établit une connexion entre le présent et le récit à venir
 - Crée une transition douce vers l'univers thématique
 
 **Scène 2 - Exploration**
-- Exploration de l'univers thématique ({{ theme.theme }})
+- Exploration de l'univers thématique ({{ $('data').item.json.theme.label }})
 - Immersion progressive dans le thème
 - Détails sensoriels riches
 
 **Scène 3 - Retour**
 - Retour progressif au lieu initial
-- Prépare l'arrivée du son ({{ ambiance.label }})
+- Prépare l'arrivée du son ({{ $('data').item.json.ambiance.label }})
 - Clôture apaisante du récit
 
 **Scène 4 (optionnelle) - Ancrage final**
@@ -126,7 +126,7 @@ Pour chaque scène, inclure :
 
 ### 6. Lien avec l'ambiance sonore
 
-La dernière scène doit préparer naturellement l'arrivée du son : {{ ambiance.label }}
+La dernière scène doit préparer naturellement l'arrivée du son : {{ $('data').item.json.ambiance.label }}
 
 **Exemples :**
 - Si le son est "Pluie et orage" → introduire l'eau, l'humidité, le ciel qui se couvre
@@ -203,14 +203,14 @@ La dernière scène doit préparer naturellement l'arrivée du son : {{ ambiance
       "atmosphere_tags": ["paisible", "contemplatif", "sécurisant"],
       "dominant_senses": ["visual", "auditory", "tactile"],
       "spatial_coherence": "linear",
-      "connection_to_sound": "Comment le récit prépare l'ambiance sonore : {{ ambiance.label }}"
+      "connection_to_sound": "Comment le récit prépare l'ambiance sonore : {{ $('data').item.json.ambiance.label }}"
     }
   },
   "original_context": {
-    "theme": "{{ theme.theme }}",
-    "meditation_location": "{{ ambiance.immersion.name }}",
-    "sound_ambiance": "{{ ambiance.label }}",
-    "user_name": "{{ user.name }}"
+    "theme": "{{ $('data').item.json.theme.label }}",
+    "meditation_location": "{{ $('data').item.json.ambiance.immersion.name }}",
+    "sound_ambiance": "{{ $('data').item.json.ambiance.label }}",
+    "user_name": "{{ $('data').item.json.user.person }}"
   }
 }
 ```
