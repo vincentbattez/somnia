@@ -26,7 +26,7 @@ Le système actuel utilise un seul prompt qui tente de gérer simultanément :
 ### Solution proposée
 Architecture en **deux étapes** avec IA spécialisées opérant en séquence :
 
-1. **IA 1 - Storyteller** : Crée un récit narratif cohérent de 3-4 scènes
+1. **IA 1 - Storyteller** : Crée un récit narratif cohérent de 5 scènes
 2. **IA 2 - Meditation Expert** : Intègre ce récit dans une structure méditative complète
 
 ---
@@ -70,7 +70,7 @@ graph TB
 | Aspect | IA 1 : Storyteller | IA 2 : Meditation Expert |
 |--------|-------------------|--------------------------|
 | **Focus principal** | Cohérence narrative | Structure méditative |
-| **Output** | Récit de 3-4 scènes (~200 mots) | Méditation complète (~600 mots) |
+| **Output** | Récit de 5 scènes (~300 mots) | Méditation complète (~600 mots) |
 | **Expertise** | Storytelling visuel | Techniques de relaxation |
 | **Connaît la méditation** | Conscience minimale | Expertise complète |
 
@@ -91,7 +91,7 @@ sequenceDiagram
     Note over U,IA1: Thème, Lieu, Immersion, <br/>Ambiance sonore
     
     IA1->>IA1: Création récit narratif
-    Note over IA1: 3-4 scènes cohérentes<br/>Format hybride JSON
+    Note over IA1: 5 scènes cohérentes<br/>Format hybride JSON
     
     IA1->>IA2: Récit structuré
     Note over IA1,IA2: JSON: scènes + transitions
@@ -114,7 +114,7 @@ sequenceDiagram
    - Ambiance sonore à venir (ex: "Pluie et orage")
 
 2. **IA 1 traite** → Génère récit structuré
-   - Crée 3-4 scènes visuelles cohérentes
+   - Crée 5 scènes visuelles cohérentes
    - Assure transitions fluides
    - Vocabulaire simple et sensoriel
    - Format : JSON + prose courte
@@ -139,7 +139,7 @@ sequenceDiagram
 
 ### Rôle et responsabilités
 
-**Mission principale** : Créer un récit visuel cohérent de 3-4 scènes progressives.
+**Mission principale** : Créer un récit visuel cohérent de 5 scènes progressives.
 
 #### Responsabilités ✅
 - ✅ Concevoir un **arc narratif** simple et clair
@@ -148,6 +148,7 @@ sequenceDiagram
 - ✅ Assurer la **cohérence spatiale** (une progression logique des lieux)
 - ✅ Maintenir une **atmosphère apaisante** (contexte relaxant)
 - ✅ Respecter le thème et le lieu fournis
+- ✅ Fournir des **connexions cohérentes** (lieu/thème/exploration/retour/son)
 
 #### N'est PAS responsable de ❌
 - ❌ L'ancrage respiratoire
@@ -198,7 +199,7 @@ L'IA 1 reçoit les données sélectionnées aléatoirement par le système JavaS
 {
   "narrative": {
     "arc": "Du lieu de méditation vers l'univers thématique, puis retour progressif",
-    "total_scenes": 3,
+    "total_scenes": 5,
     "scenes": [
       {
         "scene_number": 1,
@@ -232,7 +233,7 @@ L'IA 1 reçoit les données sélectionnées aléatoirement par le système JavaS
     ]
   },
   "metadata": {
-    "total_words": 200,
+    "total_words": 300,
     "atmosphere": "apaisante",
     "spatial_coherence": "linear"
   }
@@ -242,10 +243,10 @@ L'IA 1 reçoit les données sélectionnées aléatoirement par le système JavaS
 ### Contraintes et règles
 
 #### Contraintes structurelles
-- **Nombre de scènes** : 3-4 maximum
-- **Longueur totale** : ~200 mots (tous textes narratifs combinés)
-- **Longueur par scène** : 50-70 mots de prose
-- **Arc narratif** : Début → Exploration → Retour
+- **Nombre de scènes** : 5
+- **Longueur totale** : ~300 mots (tous textes narratifs combinés)
+- **Longueur par scène** : 30-70 mots de prose
+- **Arc narratif** : Ancrage → Exploration → Exploration profonde → Retour → Ancrage final
 
 #### Règles de création
 
@@ -260,10 +261,35 @@ L'IA 1 reçoit les données sélectionnées aléatoirement par le système JavaS
    - Exception : Peut utiliser 1-2 mots du vocabulaire thématique si essentiels ET simples
 
 3. **Progression narrative**
-   - Scène 1 : Ancrage dans le lieu de méditation
-   - Scène 2 : Exploration de l'univers thématique
-   - Scène 3 : Retour progressif au lieu initial
-   - Optionnel Scène 4 : Ancrage final
+
+**Scène 1 - Ancrage** (15%)
+- Commence par la découverte du lieu de méditation
+- Établit une connexion entre le présent et le récit à venir
+- Introduit quelques éléments de l'univers thématique
+- Crée une transition douce vers l'univers thématique
+
+**Scène 2 - Exploration** (20%)
+- Exploration de l'univers thématique dans les alentours du lieu
+- Immersion progressive dans le thème
+- Détails sensoriels riches
+- ✅ **IMPORTANT** : Établir clairement l'axe/chemin d'exploration pour la suite
+
+**Scène 3 - Exploration profonde** (30%)
+- Exploration d'un autre lieu plus éloigné et plus immersif
+- Plongée plus profonde dans l'univers thématique
+- Intensification des éléments sensoriels
+- ✅ **IMPORTANT** : Point culminant du récit (moment fort)
+
+**Scène 4 - Retour** (25%)
+- Retour progressif au lieu précédent (scène 2)
+- Puis retour progressif au lieu initial (scène 1)
+- Intensification du son de l'ambiance
+- ✅ **IMPORTANT** : Retour OBLIGATOIRE par les mêmes lieux que l'aller (symétrie)
+
+**Scène 5 - Ancrage final** (10%)
+- Renforcement du retour au lieu de méditation
+- Dernières images apaisantes
+- Remplacement naturel de la méditation par l'ambiance sonore
 
 4. **Atmosphère relaxante**
    - Pas de danger, conflit, ou tension
@@ -310,6 +336,43 @@ Le cuir du fauteuil est chaud sous tes doigts."
 - Éléments sensoriels multiples (vue, ouïe, toucher)
 - Atmosphère paisible
 - Transition fluide entre présent et visualisation
+
+### Techniques avancées recommandées
+
+Les benchmarks ont identifié plusieurs techniques très efficaces pour améliorer la qualité narrative :
+
+#### 1. Guides narratifs
+Utiliser des personnages, objets ou éléments pour fluidifier les transitions :
+- **Personnages** : Créatures thématiques qui guident (ex: Pokémon)
+- **Éléments naturels** : Sentier, lumière, son, vent
+- **Objets** : Carte, Poké Ball, livre
+
+**Avantages :**
+- Transitions plus naturelles et fluides
+- Cohérence thématique renforcée
+- Dimension émotionnelle ajoutée
+
+#### 2. Objet de connexion
+Introduire un objet tangible reliant le lieu de méditation au thème :
+- Brille/s'active au début (scène 1)
+- Disparaît/s'éteint à la fin (scène 5)
+- Crée un bouclage narratif satisfaisant
+
+**Exemples :**
+- Poké Ball ancienne sur l'appui de fenêtre
+- Carte mystérieuse avec symbole thématique
+- Livre illustré du thème
+
+#### 3. Axe d'exploration clair
+Établir dès la scène 2 un élément spatial constant :
+- Sentier, forêt, chemin, rivière
+- Même axe pour aller ET retour
+- Facilite la compréhension spatiale
+
+**Avantages :**
+- Évite les confusions spatiales
+- Structure claire et rassurante
+- Symétrie narrative naturelle
 
 ---
 
@@ -378,7 +441,7 @@ Phrase d'accueil personnalisée + création atmosphère + lever pression tempore
 Progression tête → pieds, détente de chaque zone
 
 [Partie 4 : Visualisation narrative - 250-300 mots]
-Intégration des 3-4 scènes de l'IA 1 avec enrichissements méditatifs
+Intégration des 5 scènes de l'IA 1 avec enrichissements méditatifs
 
 [Partie 5 : Transition sommeil - 80-100 mots]
 Introduction ambiance sonore + clôture douce + dernières images apaisantes
@@ -469,7 +532,7 @@ Introduction ambiance sonore + clôture douce + dernières images apaisantes
 ```
 Te voilà dans le fauteuil... le cuir est chaud sous tes mains... 
 tu tiens un livre ancien, et sur la page, une forêt verte respire 
-doucement sous un ciel de brume... Tu inspires avec elle... expir es 
+doucement sous un ciel de brume... Tu inspires avec elle... expires 
 avec elle... Des créatures géantes marchent entre les fougères, 
 leur pas est si lent qu'il devient le rythme même de ta respiration... 
 chaque pas... un souffle... chaque souffle... une détente plus profonde...
@@ -499,7 +562,7 @@ IA 1 (Storyteller) --[JSON]→ IA 2 (Meditation Expert)
   "storyteller_output": {
     "narrative": {
       "arc_description": "Description brève de l'arc narratif global",
-      "total_scenes": 3,
+      "total_scenes": 5,
       "scenes": [
         {
           "scene_number": 1,
@@ -523,7 +586,7 @@ IA 1 (Storyteller) --[JSON]→ IA 2 (Meditation Expert)
       ]
     },
     "metadata": {
-      "total_narrative_words": 200,
+      "total_narrative_words": 300,
       "atmosphere_tags": ["paisible", "contemplatif", "sécurisant"],
       "dominant_senses": ["visual", "auditory", "tactile"],
       "spatial_coherence": "linear|circular|stationary",
@@ -565,12 +628,25 @@ IA 1 (Storyteller) --[JSON]→ IA 2 (Meditation Expert)
 
 ### Validation et contrôle qualité
 
-L'IA 2 doit vérifier :
-1. ✅ Présence de tous les champs obligatoires
-2. ✅ Nombre de scènes dans la plage 3-4
-3. ✅ Longueur totale ~200 mots (±30 mots acceptable)
-4. ✅ Cohérence de l'arc narratif
-5. ✅ Présence d'au moins 2 sens par scène
+#### Validation technique
+- ✅ Format JSON valide
+- ✅ Tous les champs obligatoires présents
+- ✅ 5 scènes exactement
+- ✅ Longueur totale 270-330 mots
+- ✅ Longueur par scène 20-80 mots
+
+#### Validation qualité narrative
+- ✅ Cohérence spatiale : Retour symétrique obligatoire
+- ✅ Aucun élément de danger ou tension
+- ✅ Vocabulaire simple et sensoriel
+- ✅ Au minimum 3 sens par scène
+- ✅ Transitions fluides (2-3 phrases minimum)
+
+#### Seuils de qualité minimale
+Pour être utilisable en production :
+- Note globale ≥ 40/50 (voir guide d'évaluation)
+- Cohérence spatiale ≥ 8/10
+- Aucun problème critique (retour non symétrique, danger, etc.)
 
 ---
 
@@ -610,7 +686,7 @@ L'IA 2 doit vérifier :
   "storyteller_output": {
     "narrative": {
       "arc_description": "De la cabane chaleureuse vers la forêt proche, puis retour progressif",
-      "total_scenes": 3,
+      "total_scenes": 5,
       "scenes": [
         {
           "scene_number": 1,
@@ -652,7 +728,7 @@ L'IA 2 doit vérifier :
           "scene_number": 3,
           "title": "La clairière au ruisseau",
           "location": "Clairière forestière avec ruisseau",
-          "atmosphere": "serein et contemplatifdouble",
+          "atmosphere": "serein et contemplatif",
           "sensory_elements": {
             "visual": "Clairière lumineuse, ruisseau clair qui coule",
             "auditory": "Murmure de l'eau sur les pierres",
@@ -826,7 +902,7 @@ graph LR
 ```
 Tu es un créateur d'histoires visuelles pour méditation.
 
-MISSION: Créer un récit narratif de 3-4 scènes cohérentes et apaisantes.
+MISSION: Créer un récit narratif de 5 scènes cohérentes et apaisantes.
 
 DONNÉES D'ENTRÉE:
 - Thème: {theme.theme}
@@ -837,11 +913,11 @@ DONNÉES D'ENTRÉE:
 - Ambiance sonore finale: {ambiance.label}
 
 CONTRAINTES:
-- 3-4 scènes maximum
-- ~200 mots au total
-- 50-70 mots par scène
+- 5 scènes exactement
+- ~300 mots au total
+- 30-70 mots par scène
 - Vocabulaire simple et sensoriel
-- Arc narratif: Ancrage → Exploration → Retour
+- Arc narratif: Ancrage → Exploration → Exploration profonde → Retour → Ancrage final
 - Atmosphère relaxante uniquement
 
 FORMAT DE SORTIE: JSON (voir structure complète dans documentation)
@@ -942,10 +1018,9 @@ async function generateMeditation(userId) {
 ```javascript
 function validateStoryOutput(output) {
   const checks = [
-    output.narrative?.scenes?.length >= 3,
-    output.narrative?.scenes?.length <= 4,
-    output.metadata?.total_narrative_words >= 170,
-    output.metadata?.total_narrative_words <= 230,
+    output.narrative?.scenes?.length === 5,
+    output.metadata?.total_narrative_words >= 270,
+    output.metadata?.total_narrative_words <= 330,
     output.narrative.scenes.every(s =>
       s.scene_number &&
       s.location &&
@@ -1019,6 +1094,20 @@ function validateMeditationOutput(text) {
 - **Rate limiting** : Limiter appels API pour éviter abus
 - **Stockage sécurisé** : Chiffrement des données personnelles
 - **RGPD** : Consentement utilisateur, droit à l'oubli
+
+---
+
+## Ressources d'Évaluation
+
+Pour l'évaluation qualitative des sorties Storyteller, consulter :
+- [`analyse/guide_evaluation_storyteller.md`](analyse/guide_evaluation_storyteller.md) : Méthodologie complète d'évaluation
+- [`analyse/benchmark_storyteller_qualite_narrative.md`](analyse/benchmark_storyteller_qualite_narrative.md) : Exemple d'analyse comparative
+
+Ces documents fournissent :
+- Grille de notation standardisée (50 points)
+- Critères détaillés avec barèmes
+- Méthodologie reproductible
+- Exemples concrets de benchmarks réels
 
 ---
 
