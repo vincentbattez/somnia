@@ -1,0 +1,81 @@
+{
+  "version": "1.0",
+  "storyteller_output": {
+    "narrative": {
+      "arc_description": "Depuis la tente, le regard s’ouvre sur une rêverie galactique avant de revenir doucement au cocon nocturne.",
+      "total_scenes": 3,
+      "scenes": [
+        {
+          "scene_number": 1,
+          "title": "Sous la toile, les pierres veillent",
+          "location": "Tente installée dans la forêt du Mont Tiscali, près des structures néolithiques",
+          "atmosphere": "paisible",
+          "sensory_elements": {
+            "visual": "Toile beige adoucie par la lampe, ombres des pins, pierres pâles, cartes pliées",
+            "auditory": "",
+            "tactile": "Tissu lisse du duvet, sol ferme et stable, coussin moelleux",
+            "olfactory": "Odeur douce de mousse et de terre humide",
+            "temperature": "Fraîcheur agréable autour, chaleur tranquille sous la couverture"
+          },
+          "narrative_text": "Dans la tente, la lueur dorée arrondit chaque pli de la toile. Les silhouettes des pins s’étirent sur le tissu, comme des traits d’encre. Tout près, les pierres anciennes reflètent une pâleur laiteuse. Tu suis des doigts les lignes d’une carte, semblables à des routes stellaires. Tu imagines La Force, calme et claire, reliant les blocs néolithiques à ton souffle régulier.",
+          "meditation_hints": {
+            "breathing_anchor": "La lueur stable de la lampe sur la toile",
+            "relaxation_focus": "La solidité rassurante des pierres proches"
+          },
+          "transition_to_next": "Tu soulèves le rabat et la nuit s’ouvre sur le cercle de pierres, comme une porte tranquille."
+        },
+        {
+          "scene_number": 2,
+          "title": "Le cercle et l’archive",
+          "location": "Cercle de pierres néolithiques, clairière ouverte au ciel",
+          "atmosphere": "contemplatif",
+          "sensory_elements": {
+            "visual": "Ciel profond, poussières d’étoiles, reflet bleuté, contours lisses d’un droïde",
+            "auditory": "Un chuchotement de pluie très lointain",
+            "tactile": "Grain doux de la pierre sous la paume, sol stable",
+            "olfactory": "Senteur claire de résine et de roche",
+            "temperature": "Fraîche fraîcheur sur les joues"
+          },
+          "narrative_text": "Le cercle devient une archive tranquille, un temple Jedi aux colonnes simples. Sur un socle, un Sabre laser repose, cristal bleu dormant, comme une étoile posée. Un Droïde jardinier passe, lent et attentif, polissant une mosaïque. Les pierres brillent d’un voile argenté, ordonnées comme une constellation. Un chuchotement de pluie reste très loin. La Force circule ici, douce, vaste, sans effort, telle une marée claire.",
+          "meditation_hints": {
+            "breathing_anchor": "La lueur régulière du cristal bleu",
+            "relaxation_focus": "La symétrie apaisante des colonnes et des pierres"
+          },
+          "transition_to_next": "Tu refermes les paupières et la vision glisse, ramenant la clairière vers la tente."
+        },
+        {
+          "scene_number": 3,
+          "title": "Retour au cocon d’étoffe",
+          "location": "À l’intérieur de la tente, face à l’ouverture partiellement close",
+          "atmosphere": "serein",
+          "sensory_elements": {
+            "visual": "Éclats pâles sur la toile, ombres rondes, perles d’eau dessinant des chemins",
+            "auditory": "La pluie tapote la toile, le tonnerre demeure lointain",
+            "tactile": "Duvet enveloppant, tapis souple, épaules détendues",
+            "olfactory": "Bois mouillé, herbes froissées",
+            "temperature": "Tiédeur du corps sous la couverture, fraîcheur de l’air nocturne"
+          },
+          "narrative_text": "De retour, la toile devient un ciel intime où la lumière glisse en halos doux. Les ombres arrondies se déplacent à pas lents. La pluie tapote la toile en points légers, tandis que le tonnerre demeure lointain. Tu ranges la vision du temple comme un livre précieux. La Force reste en toi, tranquille; le Sabre laser, fermé, repose dans la mémoire. La tente respire, vaste et sûre.",
+          "meditation_hints": {
+            "breathing_anchor": "Le va-et-vient régulier des ombres sur la toile",
+            "relaxation_focus": "La sensation de tiédeur protégée par la couverture"
+          },
+          "transition_to_next": "Les images se fondent en obscurité douce, prêtes à s’effacer dans le sommeil."
+        }
+      ]
+    },
+    "metadata": {
+      "total_narrative_words": 201,
+      "atmosphere_tags": ["paisible", "contemplatif", "sécurisant"],
+      "dominant_senses": ["visual", "tactile", "olfactory"],
+      "spatial_coherence": "linear",
+      "connection_to_sound": "Absence de son en scène 1; murmure lointain de pluie en scène 2; pluie douce et tonnerre lointain, secondaire, en scène 3 pour guider la descente."
+    }
+  },
+  "original_context": {
+    "theme": "Star Wars",
+    "meditation_location": "en randonnée sous une tente",
+    "sound_ambiance": "Pluie et orage",
+    "user_name": "Léa et Vincent"
+  }
+}

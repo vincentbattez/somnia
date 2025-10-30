@@ -11,14 +11,121 @@ Transformer le récit narratif fourni par le Storyteller en une méditation guid
 ### Récit narratif (fourni par le Storyteller)
 
 ```json
-{{ $json.output }}
+{
+  "version": "1.0",
+  "storyteller_output": {
+    "narrative": {
+      "arc_description": "Depuis la tente, tu glisses doucement vers une vision étoilée inspirée par la Force, puis reviens, apaisé, au bercail de la toile sous la pluie.",
+      "total_scenes": 4,
+      "scenes": [
+        {
+          "scene_number": 1,
+          "title": "Sous la toile du Mont Tiscali",
+          "location": "Intérieur de la tente, clairière forestière près des structures néolithiques",
+          "atmosphere": "calme",
+          "sensory_elements": {
+            "visual": "toile beige, lueurs chaudes, silhouettes des pins et pierres anciennes",
+            "auditory": "respirs réguliers, léger froissement du tissu",
+            "tactile": "douceur du sac de couchage, tapis ferme sous les paumes",
+            "olfactory": "résine de pin, terre humide",
+            "temperature": "tiédeur confortable, air frais aux chevilles"
+          },
+          "narrative_text": "Dans la tente, tu t’installes avec Léa et Vincent. La toile filtre une lumière douce, les pins dressent leurs ombres fines autour des pierres anciennes. Tu sens la chaleur du sac de couchage, la trame du tapis sous tes doigts. Le monde est simple ici, stable, proche. Tes épaules se relâchent, le regard s’ouvre, tranquille.",
+          "meditation_hints": {
+            "breathing_anchor": "la lenteur des respirations régulières",
+            "relaxation_focus": "la chaleur du sac de couchage autour du corps"
+          },
+          "transition_to_next": "Ton regard suit une couture de la toile, comme un chemin qui invite à rêver plus loin."
+        },
+        {
+          "scene_number": 2,
+          "title": "Le voile des étoiles",
+          "location": "Même tente, toile devenant un ciel intérieur",
+          "atmosphere": "paisible",
+          "sensory_elements": {
+            "visual": "points lumineux semblables à une carte d’Hyperespace, ombres bleutées",
+            "auditory": "feuilles lointaines qui chuchotent",
+            "tactile": "contact lisse du tissu près du visage",
+            "olfactory": "odeur discrète de pluie qui approche",
+            "temperature": "fraîcheur légère au front"
+          },
+          "narrative_text": "La toile s’illumine de constellations douces, comme une carte d’Hyperespace. Tu perçois la Force comme une présence paisible, un fil invisible qui harmonise tout. Un petit voyant, tel l’œil d’un droïde au repos, pulse faiblement. Les doigts glissent sur le tissu lisse. Au dehors, une odeur de pluie se devine, tendre promesse.",
+          "meditation_hints": {
+            "breathing_anchor": "le petit rythme lumineux imaginé",
+            "relaxation_focus": "la sensation de la Force comme fil harmonieux"
+          },
+          "transition_to_next": "Les constellations se rapprochent, puis se fondent en lueur plus proche de la toile."
+        },
+        {
+          "scene_number": 3,
+          "title": "Lueur de veille",
+          "location": "Entrée de la tente, regard vers la clairière",
+          "atmosphere": "serein",
+          "sensory_elements": {
+            "visual": "éclat bleuté, reflets sur les aiguilles des pins",
+            "auditory": "premières gouttes, tonnerre lointain au rythme régulier",
+            "tactile": "air frais sur les mains, tissu doux contre la joue",
+            "olfactory": "parfum franc de pin mouillé",
+            "temperature": "souffle plus frais, peau apaisée"
+          },
+          "narrative_text": "À l’entrée, un reflet doux, comme un sabre laser au repos, veille sur la clairière. Tu te sens calme, concentré, presque Jedi dans cette attention tranquille. Les premières gouttes touchent la toile, espacées, rassurantes. Un tonnerre très lointain roule sans brusquer. L’air frais caresse tes mains, et le parfum de pin mouillé monte, net.",
+          "meditation_hints": {
+            "breathing_anchor": "le rythme régulier des gouttes naissantes",
+            "relaxation_focus": "le parfum de pin mouillé qui stabilise"
+          },
+          "transition_to_next": "Le ciel se pose en pluie plus dense, sans hâter le temps, et la tente devient cocon."
+        },
+        {
+          "scene_number": 4,
+          "title": "Cocon d’étoffes",
+          "location": "Intérieur de la tente, couchage",
+          "atmosphere": "assurant",
+          "sensory_elements": {
+            "visual": "toile assombrie, lueurs tièdes comme étoiles voilées",
+            "auditory": "pluie régulière, grondement sourd et lointain",
+            "tactile": "sac qui enlace, oreiller souple",
+            "olfactory": "terre lavée, bois humide",
+            "temperature": "chaleur stable du couchage"
+          },
+          "narrative_text": "Tu te recouches, la tente devient un cocon d’étoffes. Les lueurs tièdes s’estompent comme des étoiles derrière un voile. La pluie trace un rythme égal sur la toile, un pas lent et sûr. Le tonnerre s’arrondit, presque berceuse. Tu reviens pleinement ici, porté par ce tempo doux, calme jusqu’au bout des paupières.",
+          "meditation_hints": {
+            "breathing_anchor": "le martèlement régulier de la pluie",
+            "relaxation_focus": "la chaleur stable du couchage"
+          },
+          "transition_to_next": "Le souffle se cale au rythme de la pluie, prêt pour un long repos."
+        }
+      ]
+    },
+    "metadata": {
+      "total_narrative_words": 214,
+      "atmosphere_tags": [
+        "paisible",
+        "contemplatif",
+        "sécurisant"
+      ],
+      "dominant_senses": [
+        "visual",
+        "auditory",
+        "tactile"
+      ],
+      "spatial_coherence": "linear",
+      "connection_to_sound": "La scène 2 introduit l’odeur de pluie, la scène 3 ajoute gouttes et tonnerre lointain, la scène 4 installe la pluie comme rythme apaisant secondaire."
+    }
+  },
+  "original_context": {
+    "theme": "Star Wars",
+    "meditation_location": "en randonnée sous une tente",
+    "sound_ambiance": "Pluie et orage",
+    "user_name": "Léa et Vincent"
+  }
+}
 ```
 
 ### Informations utilisateur
-- **Prénom** : {{ $('data').item.json.user.person }}
-- **Durée de sommeil** : {{ $('data').item.json.user.sleepDuration }}
-- **Ambiance sonore** : {{ $('data').item.json.ambiance.label }}
-- **Description du son** : {{ $('data').item.json.ambiance.description }}
+- **Prénom** : Léa et Vincent
+- **Durée de sommeil** : 7h45
+- **Ambiance sonore** : Pluie et orage
+- **Description du son** : Une ambiance apaisante de pluie avec des éclairs et le son lointain du tonnerre.
 
 ## Responsabilités
 
@@ -35,7 +142,7 @@ Le Storyteller fournit le récit narratif complet (scènes, lieux, transitions).
 **Objectif** : Accueillir l'utilisateur et créer une atmosphère de sécurité
 
 **Éléments OBLIGATOIRES :**
-- Salutation personnalisée avec le prénom : {{ $('data').item.json.user.person }}
+- Salutation personnalisée avec le prénom : Léa et Vincent
 - Référence au thème de la méditation
 - Encouragement au lâcher-prise
 - Lever la pression temporelle (la nuit est longue, rien à faire)
@@ -90,7 +197,7 @@ VARIE ton approche à chaque itération. Exemples d'angles : accueil direct et d
 
 #### INTÉGRATION DE L'AMBIANCE SONORE
 
-**IMPORTANT** : L'ambiance sonore ({{ $('data').item.json.ambiance.label }}) est présente dès le début du TTS. Le Storyteller l'a déjà introduite progressivement. Tu continues cette progression :
+**IMPORTANT** : L'ambiance sonore (Pluie et orage) est présente dès le début du TTS. Le Storyteller l'a déjà introduite progressivement. Tu continues cette progression :
 
 **Scène 1-2** : Mentions subtiles (le Storyteller a commencé l'introduction)
 - Exemples : "tu sens l'air qui change doucement", "le souffle marin caresse ta peau"
@@ -100,22 +207,6 @@ VARIE ton approche à chaque itération. Exemples d'angles : accueil direct et d
 
 **Important** : Le son reste SECONDAIRE au thème. Il enrichit sans dominer, préparant naturellement la partie 5.
 
-**RÈGLES D'ÉQUILIBRE SENSORIEL (CRITIQUE) :**
-
-La partie 4 (Visualisation) doit respecter cet équilibre strict :
-- **60-70%** : Descriptions VISUELLES (lieu + thème + scènes)
-- **20-30%** : Sensations corporelles et ancrage méditatif
-- **10-15%** : Ambiance sonore (maximum 3-4 mentions subtiles)
-
-**Comment compter :**
-- Chaque phrase/segment mentionnant principalement le son = 1 mention
-- Objectif : Sur ~12-15 phrases de la partie 4, maximum 2-3 doivent être centrées sur le son
-- Les autres doivent enrichir la dimension VISUELLE et THÉMATIQUE
-
-**Exemples de répartition correcte :**
-- ✅ 10 phrases sur visualisation/thème + 2 phrases mentionnant subtilement le son en arrière-plan
-- ❌ 5 phrases visualisation + 5 phrases sur le son qui monte/s'intensifie
-
 #### ENRICHISSEMENTS MÉDITATIFS AUTORISÉS
 
 **Pauses et rythme :**
@@ -124,11 +215,9 @@ La partie 4 (Visualisation) doit respecter cet équilibre strict :
 - Répétitions apaisantes : "encore... doucement... tranquillement"
 
 **Instructions respiratoires intégrées :**
-- ✅ "Tu inspires avec [élément VISUEL ou THÉMATIQUE]... tu expires avec [élément]..."
-- ✅ "À chaque souffle, tu [action/sensation liée au LIEU ou THÈME]..."
+- ✅ "Tu inspires avec [élément]... tu expires avec [élément]..."
+- ✅ "À chaque souffle, tu [action/sensation]..."
 - ✅ Utiliser les `breathing_anchor` suggérés dans le récit
-- ⚠️ LIMITER les ancrages sur l'ambiance sonore : maximum 2 mentions subtiles sur toute la partie 4
-- ✅ PRIVILÉGIER les ancrages sur : éléments visuels du lieu, mouvement des éléments thématiques, sensations corporelles
 
 **Métaphores de relaxation :**
 - Relier éléments du récit à la détente corporelle
@@ -147,55 +236,25 @@ La partie 4 (Visualisation) doit respecter cet équilibre strict :
 + [Transition vers scène suivante utilisant `transition_to_next`]
 ```
 
-### Techniques d'expansion visuelle
-
-**Objectif :** Développer les descriptions visuelles du récit sans les alourdir
-
-**1. Micro-détails visuels :**
-- Ajouter des précisions visuelles aux éléments du récit
-- Exemple : "le ciel" → "le ciel d'un bleu profond, presque noir"
-- Exemple : "les étoiles" → "les étoiles qui scintillent par vagues lentes"
-
-**2. Mouvement visuel :**
-- Animer les éléments statiques avec des mouvements lents
-- Exemple : "la lumière" → "la lumière qui danse doucement"
-- Exemple : "les ombres" → "les ombres qui s'étirent et se rétractent"
-
-**3. Perspective et échelle :**
-- Jouer avec les distances et les tailles
-- Exemple : "au loin...", "tout près...", "immense...", "minuscule..."
-
-**4. Éclairage et couleurs :**
-- Préciser les nuances de lumière et couleur
-- Exemple : "lueur dorée", "reflet argenté", "ombre bleutée"
-
-**APPLICATION :**
-- Utiliser 2-3 de ces techniques par scène du récit
-- Ne PAS utiliser ces techniques pour développer l'ambiance sonore
-
 ### Partie 5 : Transition vers le sommeil (80-100 mots)
 **Objectif** : Préparer naturellement l'endormissement avec l'ambiance sonore
-
-**CONTRAINTE IMPORTANTE :**
-- Le son d'ambiance doit être mentionné 2-3 fois maximum dans cette partie
-- La PRIORITÉ reste sur les dernières images VISUELLES du récit et du lieu
-- Le son sert de toile de fond, pas d'élément principal
 
 **IMPORTANT** : L'ambiance sonore est déjà présente depuis le début. Ici, elle s'intensifie pour devenir une berceuse enveloppante qui accompagne vers le sommeil.
 
 **Éléments OBLIGATOIRES :**
 1. Lien avec la dernière scène du récit
-2. Intensification de l'ambiance sonore : {{ $('data').item.json.ambiance.label }}
+2. Intensification de l'ambiance sonore : Pluie et orage
 3. Invitation au lâcher-prise total
 4. Dernières images apaisantes
 5. Clôture douce sans réveil brutal
 
 **Vocabulaire de clôture :**
-- **Images visuelles** : "les dernières images...", "tu revois...", "devant tes yeux..."
-- **Son en arrière-plan** : "accompagné par...", "avec en fond...", "bercé par..."
-- "tu es en sécurité", "au chaud", "protégé"
-- "tes pensées se font rares", "légères", "comme..."
-- "tu glisses doucement", "en toute confiance", "vers le sommeil"
+- ✅ "la [son] s'intensifie", "t'enveloppe complètement", "te berce"
+- ✅ "l'ambiance de [son] devient une berceuse"
+- ✅ "tu es en sécurité", "au chaud", "protégé"
+- ✅ "tu glisses doucement vers le sommeil"
+- ❌ "la [son] prend le relais" (elle était déjà là)
+- ❌ "la [son] arrive maintenant" (faux)
 
 ## Contraintes globales
 
@@ -204,7 +263,7 @@ La partie 4 (Visualisation) doit respecter cet équilibre strict :
 - **Format** : Prose fluide, SANS titres de sections visibles
 - **Personne** : 2e personne du singulier ("tu") systématiquement
 - **Temps** : Présent pour l'immersion
-- **Personnalisation** : Utiliser le prénom {{ $('data').item.json.user.person }} au début
+- **Personnalisation** : Utiliser le prénom Léa et Vincent au début
 
 ### Techniques d'enrichissement méditatif
 

@@ -1,0 +1,124 @@
+{
+  "version": "1.0",
+  "original_context": {
+    "theme": "Pokémon",
+    "theme_description": "Un monde où les humains coexistent avec des créatures aux pouvoirs extraordinaires, les Pokémon. Les dresseurs voyagent, capturent, entraînent et combattent aux côtés de leurs Pokémon pour devenir les meilleurs.",
+    "example_theme_vocabulary": ["Dresseur", "Pokémon", "Poké Ball", "Attaque", "Capture", "Évolution", "Arène", "Légendaire"],
+    "meditation_location": "au chalet en montagne",
+    "location_description": "Dans un chalet en bois au milieu des montagnes, écoutant la pluie tomber",
+    "sound_ambiance": "Pluie et orage",
+    "sound_description": "Une ambiance apaisante de pluie avec des éclairs et le son lointain du tonnerre.",
+    "user_name": "Léa et Vincent",
+    "sleep_duration": "7h15"
+  },
+  "storyteller_output": {
+    "connections": {
+      "location_anchor": "Le récit commence à l’intérieur du chalet en bois, auprès d’une fenêtre et d’un feu doux.",
+      "connection_to_theme": "Des objets de Dresseur, des Pokémon familiers et des scènes paisibles ancrent doucement l’univers Pokémon.",
+      "connection_to_exploration": "Depuis la fenêtre du salon vers le porche abrité, puis le petit sentier voisin menant à un lac de montagne.",
+      "connection_to_comeback": "Retour par le même sentier au porche, puis au salon, en gardant les mêmes repères visuels et sonores.",
+      "connection_to_sound": "La pluie s’insinue en scène 2, s’amplifie au retour, jusqu’à occuper l’espace en scène 5 avec un tonnerre lointain."
+    },
+    "narrative": {
+      "arc_description": "Depuis le chalet, tu découvres doucement les environs sous la pluie, jusqu’au lac, puis reviens, ramenant la sérénité de l’averse avec toi.",
+      "total_scenes": 5,
+      "scenes": [
+        {
+          "scene_number": 1,
+          "title": "Fenêtre et premiers éclats",
+          "location": "Salon du chalet, près de la grande fenêtre donnant sur la pente",
+          "atmosphere": "calme",
+          "sensory_elements": {
+            "visual": "Reflets sur le bois, flammes douces, une Poké Ball polie sur l’étagère, silhouettes des sapins",
+            "auditory": "Crépitement feutré du feu, premiers chuchotements de pluie",
+            "tactile": "Tissu chaud d’un plaid, lisse de la tasse entre les doigts",
+            "olfactory": "Bois résineux et cacao léger",
+            "temperature": "Chaleur douce du foyer, air frais près de la vitre"
+          },
+          "narrative_text": "Tu es assis avec Léa et Vincent, face à la fenêtre. Le bois brille doucement. Sur l’étagère, une Poké Ball ronde capte la lueur des flammes. Dehors, les sapins immobiles attendent. Un premier chapelet de gouttes touche la vitre, léger comme un salut.",
+          "meditation_hints": {
+            "breathing_anchor": "Les gouttes régulières sur la vitre",
+            "relaxation_focus": "La chaleur stable du plaid"
+          },
+          "transition_to_next": "Tu ouvres la porte du salon et gagnes le porche couvert, attiré par l’odeur de pluie naissante."
+        },
+        {
+          "scene_number": 2,
+          "title": "Sous le porche, monde brillant",
+          "location": "Porche abrité du chalet, surplombant le petit jardin",
+          "atmosphere": "paisible",
+          "sensory_elements": {
+            "visual": "Pavés mouillés, perles d’eau sur les herbes, un Évoli secoue sa fourrure, un Tylton blanc posé au garde-corps",
+            "auditory": "Pluie plus présente, ruissellement des gouttières, tonnerre très lointain",
+            "tactile": "Air humide sur le visage, bois lisse de la rambarde",
+            "olfactory": "Terre mouillée, mousse fraîche",
+            "temperature": "Fraîcheur humide et agréable"
+          },
+          "narrative_text": "Sous le toit, tout scintille. Les pavés deviennent miroirs. Un Évoli trottine, secoue doucement ses oreilles, puis s’abrite sous un banc. Un Tylton, léger nuage, cligne des yeux et se blottit contre la rambarde. La pluie s’installe, régulière, comme un rythme sûr.",
+          "meditation_hints": {
+            "breathing_anchor": "Le ruissellement continu des gouttières",
+            "relaxation_focus": "La vue des gouttes formant des cercles"
+          },
+          "transition_to_next": "Au bout du jardin, le petit sentier mousseux descend vers le lac; tu emboîtes le pas, à allure lente."
+        },
+        {
+          "scene_number": 3,
+          "title": "Le lac de nuages",
+          "location": "Rive d’un petit lac de montagne, au bout du sentier",
+          "atmosphere": "serein",
+          "sensory_elements": {
+            "visual": "Eau lisse grisée, anneaux de pluie, un Lokhlass glissant au large, algues vert tendre",
+            "auditory": "Pluie souple sur l’eau, clapotis doux, grondement de tonnerre voilé",
+            "tactile": "Herbe humide sous les semelles, paume froide sur un rocher lisse",
+            "olfactory": "Odeur claire du lac et de pierre mouillée",
+            "temperature": "Fraîcheur enveloppante, agréable"
+          },
+          "narrative_text": "Le lac respire en cercles. Un Lokhlass avance sans bruit, carapace perlée, regard tranquille. Sa surface fend la pluie, comme une berceuse. Les montagnes se devinent derrière un voile gris doux. Tu restes là, immobile, le temps se tasse comme la brume.",
+          "meditation_hints": {
+            "breathing_anchor": "Les cercles successifs sur l’eau",
+            "relaxation_focus": "La lenteur régulière de Lokhlass"
+          },
+          "transition_to_next": "La pluie gagne en présence; tu reprends le même sentier, remontant vers le porche où t’attend l’abri."
+        },
+        {
+          "scene_number": 4,
+          "title": "Le chemin du retour",
+          "location": "Sentier puis porche du chalet, retour vers le salon",
+          "atmosphere": "réconfortant",
+          "sensory_elements": {
+            "visual": "Fougères inclinées, perles sur les aiguilles, Évoli roulé en boule, Tylton qui lisse ses ailes",
+            "auditory": "Pluie plus forte sur le toit, gouttes pressées des feuilles, tonnerre calme, un peu plus net",
+            "tactile": "Bois du porche tiède et humide, tissus secs à portée",
+            "olfactory": "Parfum vert des fougères et du pin",
+            "temperature": "Transition de la fraîcheur extérieure vers la tiédeur intérieure"
+          },
+          "narrative_text": "Tu longes les fougères brillantes. Sur le porche, Évoli somnole, Tylton referme ses ailes comme une plume. La pluie chante plus franc sur les tuiles, le tonnerre répond doux, au loin. La porte entrouverte laisse filer une coulée de chaleur dorée.",
+          "meditation_hints": {
+            "breathing_anchor": "Le martèlement régulier sur le toit",
+            "relaxation_focus": "Le contraste tiède en franchissant la porte"
+          },
+          "transition_to_next": "Tu entres dans le salon, refermes doucement; le monde extérieur devient musique derrière la fenêtre."
+        },
+        {
+          "scene_number": 5,
+          "title": "Dans la lumière du feu",
+          "location": "Salon du chalet, près du feu et de la fenêtre",
+          "atmosphere": "serein",
+          "sensory_elements": {
+            "visual": "Flammes calmes, verre perlé de gouttes, Poké Ball posée immobile",
+            "auditory": "Pluie constante, tonnerre velouté au loin, feu qui chuchote",
+            "tactile": "Plaid moelleux, tasse tiédie entre les mains",
+            "olfactory": "Bois chauffé, note de cacao",
+            "temperature": "Chaleur douce et stable"
+          },
+          "narrative_text": "Tu te poses avec Léa et Vincent, face au feu. La Poké Ball reflète l’orange des braises. Derrière la vitre, la pluie déroule sa grande nappe brillante. Le tonnerre respire loin, très loin. Tout s’apaise, comme si le chalet flottait, porté par ce rythme doux.",
+          "meditation_hints": {
+            "breathing_anchor": "La constance de la pluie sur la vitre",
+            "relaxation_focus": "La lueur stable des flammes"
+          },
+          "transition_to_next": "Retour progressif au lieu de méditation, préparation du son à remplacer la méditation"
+        }
+      ]
+    }
+  }
+}

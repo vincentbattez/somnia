@@ -1,0 +1,165 @@
+{
+  "version": "1.0",
+  "original_context": {
+    "user_name": "Léa et Vincent",
+    "sleep_duration": "7h15"
+  },
+  "storyteller_output": {
+    "connections": {
+      "location_anchor": "Le récit débute et se termine dans le chalet en montagne, avec des retours progressifs vers ce point d'ancrage.",
+      "connection_to_theme": "Le thème Pokémon est introduit de manière douce, d'abord par un objet dans le chalet, puis par l'exploration de la nature environnante transformée en paysage Pokémon.",
+      "connection_to_exploration": "L'exploration commence juste autour du chalet, se dirige ensuite vers un repaire secret de Pokémon légendaire, avant de revenir progressivement.",
+      "connection_to_comeback": "Le récit suit un chemin de retour logique, de la grotte au lac, puis du lac au chalet, renforçant la sensation de revenir à un lieu sûr et connu.",
+      "connection_to_sound": "L'ambiance sonore 'pluie et orage' est d'abord suggérée par des nuages et une légère humidité près du lac, puis s'intensifie progressivement lors du retour vers le chalet, culminant avec un orage doux à l'arrivée."
+    },
+    "theme": {
+      "theme": "Pokémon",
+      "theme_description": "Un monde où les humains coexistent avec des créatures aux pouvoirs extraordinaires, les Pokémon. Les dresseurs voyagent, capturent, entraînent et combattent aux côtés de leurs Pokémon pour devenir les meilleurs.",
+      "example_theme_vocabulary": [
+        "Dresseur", "Pokémon", "Poké Ball", "Attaque", "Capture", "Évolution", "Arène", "Légendaire"
+      ],
+      "sensory_elements": {
+        "visual": "Couleurs vives des Pokémon, éclats d'attaques, paysages variés (forêts, montagnes, grottes), lumière des cristaux",
+        "auditory": "Cris doux des Pokémon, bruissements d'ailes, ondes psychiques silencieuses",
+        "tactile": "Fourrure douce des Pokémon, surface lisse d'une Poké Ball, texture rocheuse d'une caverne",
+        "olfactory": "Odeur de forêt luxuriante, parfum d'herbes médicinales",
+        "temperature": "Chaleur apaisante d'un Pokémon, fraîcheur d'un lieu de repos"
+      },
+      "meditation_hints": {
+        "breathing_anchor": "Le rythme régulier du vol d'un Pokémon 'Légendaire' volant doucement.",
+        "relaxation_focus": "La présence calme et protectrice d'un Pokémon endormi."
+      }
+    },
+    "location": {
+      "location": "au chalet en montagne",
+      "location_description": "Dans un chalet en bois au milieu des montagnes, écoutant la pluie tomber",
+      "sensory_elements": {
+        "visual": "Bois sombre des murs, flammes dans la cheminée, vue sur la montagne embrumée, lumière douce des lampes",
+        "auditory": "Crépitement du feu, gouttes de pluie sur le toit, vent léger, silence de la montagne",
+        "tactile": "Chaleur du bois, douceur d'une couverture, fraîcheur de l'air ambiant",
+        "olfactory": "Odeur de bois brûlé, de pin, de terre humide",
+        "temperature": "Chaleur douillette de l'intérieur, fraîcheur de l'extérieur"
+      },
+      "meditation_hints": {
+        "breathing_anchor": "Le lent crépitement du feu dans la cheminée.",
+        "relaxation_focus": "La chaleur enveloppante du chalet."
+      }
+    },
+    "ambiance_sound": {
+      "sound_ambiance": "Pluie et orage",
+      "sound_description": "Une ambiance apaisante de pluie avec des éclairs et le son lointain du tonnerre.",
+      "sensory_elements": {
+        "visual": "Gouttes sur la vitre, reflets des éclairs, ciel grisâtre",
+        "auditory": "Gouttes qui tambourinent, roulement lointain du tonnerre, sifflement du vent, silence entre les averses",
+        "tactile": "Air humide, fraîcheur douce des fines gouttelettes",
+        "olfactory": "Odeur de terre mouillée, d'ozone après l'éclair",
+        "temperature": "Fraîcheur enveloppante, air purifié par la pluie"
+      },
+      "meditation_hints": {
+        "breathing_anchor": "Le rythme régulier et apaisant des gouttes de pluie sur le toit.",
+        "relaxation_focus": "Le sentiment de sécurité et de chaleur à l'intérieur face à l'orage extérieur."
+      }
+    },
+    "narrative": {
+      "arc_description": "Un voyage imaginaire de Léa et Vincent depuis leur chalet vers un lac alpin où dorment des Pokémon, avant un retour paisible sous une pluie apaisante.",
+      "total_scenes": 5,
+      "scenes": [
+        {
+          "scene_number": 1,
+          "title": "Chalet douillet et carte mystérieuse",
+          "location": "L'intérieur chaleureux du chalet en bois, près de la fenêtre",
+          "atmosphere": "Paisible et invitant",
+          "sensory_elements": {
+            "visual": "Foyer crépitant, chalet en bois, montagnes, fenêtre, carte ancienne, symbole de Poké Ball, lumière douce",
+            "auditory": "Crépitement du feu, silence lointain de la montagne",
+            "tactile": "Chaleur du bois, douceur du plaid",
+            "olfactory": "Odeur de pin, de bois fumé",
+            "temperature": "Chaleur confortable"
+          },
+          "meditation_hints": {
+            "breathing_anchor": "Le rythme doux des flammes du foyer.",
+            "relaxation_focus": "La chaleur enveloppante du chalet."
+          },
+          "narrative_text": "Léa et Vincent, tu es confortablement installé dans votre chalet de montagne, bercé par la douce chaleur d'un foyer. À travers la fenêtre, les sommets embrumés te murmurent des secrets. Une vieille carte posée sur la table attire votre regard. Un symbole de Poké Ball y est discrètement dessiné, promettant une aventure sereine.",
+          "transition_to_next": "Le regard glisse de la carte vers la fenêtre, invitant à une exploration des alentours immédiats."
+        },
+        {
+          "scene_number": 2,
+          "title": "Le sentier et le Gardevoir",
+          "location": "Un sentier de montagne menant à un lac discret",
+          "atmosphere": "Apaisante et légèrement mystérieuse",
+          "sensory_elements": {
+            "visual": "Sentier boisé, arbres majestueux, mousses vertes, lumière filtrée, lac scintillant au loin, ciel légèrement couvert, nuages gris légers, Gardevoir aux bras croisés",
+            "auditory": "Bruit doux du vent dans les feuilles, chant lointain d'oiseaux, le pas feutré, légère chute de pluie lointaine",
+            "tactile": "Texture des feuilles, humidité de l'air",
+            "olfactory": "Odeur de terre humide et de forêt",
+            "temperature": "Fraîcheur douce"
+          },
+          "meditation_hints": {
+            "breathing_anchor": "Le rythme doux de ta marche sur le sentier.",
+            "relaxation_focus": "La présence calme et protectrice de Gardevoir."
+          },
+          "narrative_text": "Le sentier ombragé te mène à travers une forêt dense. La lumière filtre à travers les feuilles, illuminant la mousse douce sur les rochers. Au loin, le lac alpin scintille sous un ciel qui s'assombrit légèrement. Un Gardevoir serein, les bras croisés, t'attend, son regard bienveillant t'invite à poursuivre. Une fine brise apporte une humidité légère.",
+          "transition_to_next": "Le chemin se resserre et mène doucement vers les rives du lac, invitant à une immersion plus profonde."
+        },
+        {
+          "scene_number": 3,
+          "title": "Lac Secret et Rayquaza endormi",
+          "location": "Le bord du lac alpin, près d'une grotte cachée",
+          "atmosphere": "Profonde et merveilleuse",
+          "sensory_elements": {
+            "visual": "Eaux calmes du lac, reflets des montagnes, entrée d'une grotte ornée de cristaux, Rayquaza endormi, écailles vertes, doux mouvement, lumière bleutée des cristaux",
+            "auditory": "Clapotis léger de l'eau, silence profond de la grotte, doux souffle de Rayquaza, murmure faible et lointain du tonnerre",
+            "tactile": "Air frais près de l'eau, surface lisse des cristaux",
+            "olfactory": "Odeur fraîche du lac, minéral de la grotte",
+            "temperature": "Température fraîche mais agréable"
+          },
+          "meditation_hints": {
+            "breathing_anchor": "Le lent et régulier mouvement de Rayquaza qui respire.",
+            "relaxation_focus": "La sérénité d'une créature légendaire en sommeil."
+          },
+          "narrative_text": "Tu atteins les rives d'un lac d'un calme absolu. Une petite grotte, ornée de cristaux bleutés scintillants, se révèle. À l'intérieur, un majestueux Rayquaza, aux écailles vertes douces, dort profondément, son corps immense remplissant l'espace. Son doux souffle et le faible écho lointain du tonnerre emplissent la grotte d'une étrange paix. Ses mouvements sont juste perceptibles.",
+          "transition_to_next": "Après l'observation respectueuse, le chemin du retour commence, retraçant les pas vers le sentier et le lac."
+        },
+        {
+          "scene_number": 4,
+          "title": "Retour apaisant sous la pluie douce",
+          "location": "Le sentier de montagne et les abords du chalet",
+          "atmosphere": "Apaisante et enveloppante",
+          "sensory_elements": {
+            "visual": "Forêt verdoyante sous la pluie, gouttes sur les feuilles, chemin humide, lueur du chalet, éclairs furtifs à l'horizon",
+            "auditory": "Chant des gouttes sur les feuilles, bruit du vent doux, roulement plus prononcé du tonnerre, bruissement des pas sur le sol humide",
+            "tactile": "Fraîcheur de la pluie sur le visage, sol mou sous les pieds",
+            "olfactory": "Odeur intense de terre mouillée, de forêt lavée",
+            "temperature": "Fraîcheur purifiante"
+          },
+          "meditation_hints": {
+            "breathing_anchor": "Le rythme régulier des gouttes de pluie sur les feuilles.",
+            "relaxation_focus": "La sensation de fraîcheur purifiante de l'air."
+          },
+          "narrative_text": "Tu retraverses le sentier boisé, mais cette fois sous une pluie fine et apaisante. Chaque goutte scintille sur les feuilles. Le sol est doux sous tes pas alors que tu te rapproches du chalet. Le murmure de l'orage devient plus présent, transformant le paysage en une symphonie naturelle. Des éclairs furtifs illuminent l'horizon lointain en silence.",
+          "transition_to_next": "L'arrivée au chalet marque la fin de l'aventure, où l'attention se porte entièrement sur l'ambiance sonore de l'orage."
+        },
+        {
+          "scene_number": 5,
+          "title": "Chalet chaleureux et orage dehors",
+          "location": "L'intérieur du chalet, près de la fenêtre",
+          "atmosphere": "Sécurisante et sereine",
+          "sensory_elements": {
+            "visual": "Foyer crépitant, intérieur du chalet, fenêtre embuée, gouttes sur la vitre, éclairs flashant la montagne",
+            "auditory": "Gouttes de pluie tambourinant sur le toit, roulement du tonnerre, crépitement du feu",
+            "tactile": "Chaleur du chalet, douceur du plaid",
+            "olfactory": "Odeur de bois chaud, de terre mouillée venant de l'extérieur",
+            "temperature": "Chaleur enveloppante"
+          },
+          "meditation_hints": {
+            "breathing_anchor": "Le rythme régulier des gouttes de pluie sur la vitre.",
+            "relaxation_focus": "La sensation de sécurité et de confort à l'intérieur, malgré l'orage à l'extérieur."
+          },
+          "narrative_text": "Tu es de retour dans ton chalet douillet. Dehors, la pluie bat le rythme, tandis que le tonnerre gronde doucement au loin. Assure-toi que les rideaux sont fermés ou que la baie vitrée est flouté. Les éclairs lointains illuminent la montagne, mais à l'intérieur, la chaleur du foyer et le crépitement du bois te bercent. Tu te sens en sécurité, enveloppé dans cette atmosphère apaisante.",
+          "transition_to_next": "La description se fond dans l'ambiance sonore réelle de la pluie et de l'orage, remplaçant la narration par l'écoute passive."
+        }
+      ]
+    }
+  }
+}

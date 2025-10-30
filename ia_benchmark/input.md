@@ -9,19 +9,19 @@ Créer un récit narratif cohérent de 5 scènes progressives qui servira de bas
 ## Données d'entrée
 
 ### Thème de la méditation
-- **Thème** : {{ $('data').item.json.theme.label }}
-- **Description de l'univers** : {{ $('data').item.json.theme.description }}
-- **Vocabulaire thématique disponible** : {{ $('data').item.json.theme.vocabulary.join(", ") }}
+- **Thème** : Pokémon
+- **Description de l'univers** : Un monde où les humains coexistent avec des créatures aux pouvoirs extraordinaires, les Pokémon. Les dresseurs voyagent, capturent, entraînent et combattent aux côtés de leurs Pokémon pour devenir les meilleurs.
+- **Vocabulaire thématique disponible** : Dresseur, Pokémon, Poké Ball, Attaque, Capture, Évolution, Arène, Légendaire
 
 ### Lieu et ambiance de méditation
-- **Lieu de méditation** : {{ $('data').item.json.ambiance.immersion.name }}
-- **Description de l'immersion** : {{ $('data').item.json.ambiance.immersion.description }}
-- **Ambiance sonore à venir** : {{ $('data').item.json.ambiance.label }}
-- **Description du son** : {{ $('data').item.json.ambiance.description }}
+- **Lieu de méditation** : au chalet en montagne
+- **Description de l'immersion** : Dans un chalet en bois au milieu des montagnes, écoutant la pluie tomber
+- **Ambiance sonore à venir** : Pluie et orage
+- **Description du son** : Une ambiance apaisante de pluie avec des éclairs et le son lointain du tonnerre.
 
 ### Contexte utilisateur
-- **Prénom** : {{$('data').item.json.user.person }}
-- **Durée de sommeil** : {{ $('data').item.json.user.sleepDuration }}
+- **Prénom** : Léa et Vincent
+- **Durée de sommeil** : 7h15
 
 ## Responsabilités
 
@@ -69,13 +69,13 @@ Créer un récit narratif cohérent de 5 scènes progressives qui servira de bas
 ### 3. Progression narrative
 
 **Scène 1 - Ancrage** (15%)
-- Commence par la découverte du lieu de méditation ({{ $('data').item.json.ambiance.immersion.name }})
+- Commence par la découverte du lieu de méditation (au chalet en montagne)
 - Établit une connexion entre le présent et le récit à venir
-- Introduit quelques éléments de l'univers de la thématique ({{ $('data').item.json.theme.label }})
+- Introduit quelques éléments de l'univers de la thématique (Pokémon)
 - Crée une transition douce vers l'univers thématique
 
 **Scène 2 - Exploration** (20%)
-- Exploration de l'univers thématique ({{ $('data').item.json.theme.label }}) dans les alentours du lieu de méditation
+- Exploration de l'univers thématique (Pokémon) dans les alentours du lieu de méditation
 - Immersion progressive dans le thème
 - Détails sensoriels riches
 - Créer un transition vers une exploration plus profonde
@@ -89,13 +89,13 @@ Créer un récit narratif cohérent de 5 scènes progressives qui servira de bas
 **Scène 4 - Retour** (25%)
 - Retour progressif au lieu précédent (scène 2)
 - Puis retour progressif au lieu initial de méditation (scène 1)
-- Intensification du son de l'ambiance ({{ $('data').item.json.ambiance.label }})
+- Intensification du son de l'ambiance (Pluie et orage)
 - Clôture apaisante du récit
 
 **Scène 5 - Ancrage final** (10%)
 - Renforcement du retour au lieu de méditation
 - Dernières images apaisantes de notre aventure
-- Remplacement naturel de la méditation par l'ambiance sonore ({{ $('data').item.json.ambiance.label }})
+- Remplacement naturel de la méditation par l'ambiance sonore (Pluie et orage)
 
 ### 4. Atmosphère relaxante OBLIGATOIRE
 
@@ -130,7 +130,7 @@ Pour chaque scène, inclure :
 
 ### 6. Lien avec l'ambiance sonore
 
-La 2eme scène doit induire subtilement la présence du son à venir : {{ $('data').item.json.ambiance.label }}
+La 2eme scène doit induire subtilement la présence du son à venir : Pluie et orage
 La dernière scène doit préparer naturellement le remplacement de la méditation par cette ambiance sonore.
 
 **Exemples :**
@@ -144,15 +144,22 @@ La dernière scène doit préparer naturellement le remplacement de la méditati
 {
   "version": "1.0",
   "original_context": {
-    "user_name": "{{ $('data').item.json.user.person }}",
-    "sleep_duration": "{{ $('data').item.json.user.sleepDuration }}"
+    "user_name": "Léa et Vincent",
+    "sleep_duration": "7h15"
   },
   "storyteller_output": {
+    "connections": {
+      "location_anchor": "Comment le récit s'ancre dans le lieu de méditation : au chalet en montagne",
+      "connection_to_theme": "Comment le récit intègre le thème : Pokémon",
+      "connection_to_exploration": "Comment le récit explore progressivement les environs du lieu de méditation dans l'univers thématique : Pokémon",
+      "connection_to_comeback": "Comment le récit revient progressivement au lieu de méditation en passant par les lieux explorés",
+      "connection_to_sound": "Comment le récit prépare le remplacement de la méditation par l'ambiance sonore : Pluie et orage"
+    },
     "theme": {
-      "theme": "{{ $('data').item.json.theme.label }}",
-      "theme_description": "{{ $('data').item.json.theme.description }}",
+      "theme": "Pokémon",
+      "theme_description": "Un monde où les humains coexistent avec des créatures aux pouvoirs extraordinaires, les Pokémon. Les dresseurs voyagent, capturent, entraînent et combattent aux côtés de leurs Pokémon pour devenir les meilleurs.",
       "example_theme_vocabulary": [
-        "{{ $('data').item.json.theme.vocabulary.join('", "')}}"
+        "Dresseur", "Pokémon", "Poké Ball", "Attaque", "Capture", "Évolution", "Arène", "Légendaire"
       ],
       "sensory_elements": {
         "visual": "Éléments originaux visuels du thème",
@@ -167,8 +174,8 @@ La dernière scène doit préparer naturellement le remplacement de la méditati
       }
     },
     "location": {
-      "location": "{{ $('data').item.json.ambiance.immersion.name }}",
-      "location_description": "{{ $('data').item.json.ambiance.immersion.description }}",
+      "location": "au chalet en montagne",
+      "location_description": "Dans un chalet en bois au milieu des montagnes, écoutant la pluie tomber",
       "sensory_elements": {
         "visual": "Éléments originaux visuels du lieu",
         "auditory": "Sons originaux du lieu",
@@ -182,8 +189,8 @@ La dernière scène doit préparer naturellement le remplacement de la méditati
       }
     },
     "ambiance_sound": {
-      "sound_ambiance": "{{ $('data').item.json.ambiance.label }}",
-      "sound_description": "{{ $('data').item.json.ambiance.description }}",
+      "sound_ambiance": "Pluie et orage",
+      "sound_description": "Une ambiance apaisante de pluie avec des éclairs et le son lointain du tonnerre.",
       "sensory_elements": {
         "visual": "Éléments originaux visuels associés au son",
         "auditory": "Caractéristiques sonores originales de l'ambiance",
@@ -195,13 +202,6 @@ La dernière scène doit préparer naturellement le remplacement de la méditati
         "breathing_anchor": "Élément original du son pouvant servir d'ancrage respiratoire",
         "relaxation_focus": "Élément original du son pouvant servir pour la détente"
       }
-    },
-    "connections": {
-      "location_anchor": "Comment le récit s'ancre dans le lieu de méditation : {{ $('data').item.json.ambiance.immersion.name }}",
-      "connection_to_theme": "Comment le récit intègre le thème : {{ $('data').item.json.theme.label }}",
-      "connection_to_exploration": "Comment le récit explore progressivement les environs du lieu de méditation dans l'univers thématique : {{ $('data').item.json.theme.label }}",
-      "connection_to_comeback": "Comment le récit revient progressivement au lieu de méditation en passant par les lieux explorés",
-      "connection_to_sound": "Comment le récit prépare le remplacement de la méditation par l'ambiance sonore : {{ $('data').item.json.ambiance.label }}"
     },
     "narrative": {
       "arc_description": "Description brève de l'arc narratif global (1 phrase)",

@@ -1,0 +1,108 @@
+{
+  "version": "1.0",
+  "storyteller_output": {
+    "narrative": {
+      "arc_description": "Depuis la tente, tu glisses doucement vers une vision étoilée inspirée par la Force, puis reviens, apaisé, au bercail de la toile sous la pluie.",
+      "total_scenes": 4,
+      "scenes": [
+        {
+          "scene_number": 1,
+          "title": "Sous la toile du Mont Tiscali",
+          "location": "Intérieur de la tente, clairière forestière près des structures néolithiques",
+          "atmosphere": "calme",
+          "sensory_elements": {
+            "visual": "toile beige, lueurs chaudes, silhouettes des pins et pierres anciennes",
+            "auditory": "respirs réguliers, léger froissement du tissu",
+            "tactile": "douceur du sac de couchage, tapis ferme sous les paumes",
+            "olfactory": "résine de pin, terre humide",
+            "temperature": "tiédeur confortable, air frais aux chevilles"
+          },
+          "narrative_text": "Dans la tente, tu t’installes avec Léa et Vincent. La toile filtre une lumière douce, les pins dressent leurs ombres fines autour des pierres anciennes. Tu sens la chaleur du sac de couchage, la trame du tapis sous tes doigts. Le monde est simple ici, stable, proche. Tes épaules se relâchent, le regard s’ouvre, tranquille.",
+          "meditation_hints": {
+            "breathing_anchor": "la lenteur des respirations régulières",
+            "relaxation_focus": "la chaleur du sac de couchage autour du corps"
+          },
+          "transition_to_next": "Ton regard suit une couture de la toile, comme un chemin qui invite à rêver plus loin."
+        },
+        {
+          "scene_number": 2,
+          "title": "Le voile des étoiles",
+          "location": "Même tente, toile devenant un ciel intérieur",
+          "atmosphere": "paisible",
+          "sensory_elements": {
+            "visual": "points lumineux semblables à une carte d’Hyperespace, ombres bleutées",
+            "auditory": "feuilles lointaines qui chuchotent",
+            "tactile": "contact lisse du tissu près du visage",
+            "olfactory": "odeur discrète de pluie qui approche",
+            "temperature": "fraîcheur légère au front"
+          },
+          "narrative_text": "La toile s’illumine de constellations douces, comme une carte d’Hyperespace. Tu perçois la Force comme une présence paisible, un fil invisible qui harmonise tout. Un petit voyant, tel l’œil d’un droïde au repos, pulse faiblement. Les doigts glissent sur le tissu lisse. Au dehors, une odeur de pluie se devine, tendre promesse.",
+          "meditation_hints": {
+            "breathing_anchor": "le petit rythme lumineux imaginé",
+            "relaxation_focus": "la sensation de la Force comme fil harmonieux"
+          },
+          "transition_to_next": "Les constellations se rapprochent, puis se fondent en lueur plus proche de la toile."
+        },
+        {
+          "scene_number": 3,
+          "title": "Lueur de veille",
+          "location": "Entrée de la tente, regard vers la clairière",
+          "atmosphere": "serein",
+          "sensory_elements": {
+            "visual": "éclat bleuté, reflets sur les aiguilles des pins",
+            "auditory": "premières gouttes, tonnerre lointain au rythme régulier",
+            "tactile": "air frais sur les mains, tissu doux contre la joue",
+            "olfactory": "parfum franc de pin mouillé",
+            "temperature": "souffle plus frais, peau apaisée"
+          },
+          "narrative_text": "À l’entrée, un reflet doux, comme un sabre laser au repos, veille sur la clairière. Tu te sens calme, concentré, presque Jedi dans cette attention tranquille. Les premières gouttes touchent la toile, espacées, rassurantes. Un tonnerre très lointain roule sans brusquer. L’air frais caresse tes mains, et le parfum de pin mouillé monte, net.",
+          "meditation_hints": {
+            "breathing_anchor": "le rythme régulier des gouttes naissantes",
+            "relaxation_focus": "le parfum de pin mouillé qui stabilise"
+          },
+          "transition_to_next": "Le ciel se pose en pluie plus dense, sans hâter le temps, et la tente devient cocon."
+        },
+        {
+          "scene_number": 4,
+          "title": "Cocon d’étoffes",
+          "location": "Intérieur de la tente, couchage",
+          "atmosphere": "assurant",
+          "sensory_elements": {
+            "visual": "toile assombrie, lueurs tièdes comme étoiles voilées",
+            "auditory": "pluie régulière, grondement sourd et lointain",
+            "tactile": "sac qui enlace, oreiller souple",
+            "olfactory": "terre lavée, bois humide",
+            "temperature": "chaleur stable du couchage"
+          },
+          "narrative_text": "Tu te recouches, la tente devient un cocon d’étoffes. Les lueurs tièdes s’estompent comme des étoiles derrière un voile. La pluie trace un rythme égal sur la toile, un pas lent et sûr. Le tonnerre s’arrondit, presque berceuse. Tu reviens pleinement ici, porté par ce tempo doux, calme jusqu’au bout des paupières.",
+          "meditation_hints": {
+            "breathing_anchor": "le martèlement régulier de la pluie",
+            "relaxation_focus": "la chaleur stable du couchage"
+          },
+          "transition_to_next": "Le souffle se cale au rythme de la pluie, prêt pour un long repos."
+        }
+      ]
+    },
+    "metadata": {
+      "total_narrative_words": 214,
+      "atmosphere_tags": [
+        "paisible",
+        "contemplatif",
+        "sécurisant"
+      ],
+      "dominant_senses": [
+        "visual",
+        "auditory",
+        "tactile"
+      ],
+      "spatial_coherence": "linear",
+      "connection_to_sound": "La scène 2 introduit l’odeur de pluie, la scène 3 ajoute gouttes et tonnerre lointain, la scène 4 installe la pluie comme rythme apaisant secondaire."
+    }
+  },
+  "original_context": {
+    "theme": "Star Wars",
+    "meditation_location": "en randonnée sous une tente",
+    "sound_ambiance": "Pluie et orage",
+    "user_name": "Léa et Vincent"
+  }
+}
