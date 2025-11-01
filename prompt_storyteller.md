@@ -12,6 +12,16 @@ Créer un récit narratif cohérent de 5 scènes progressives qui servira de bas
 - **Thème** : {{ $('data').item.json.theme.label }}
 - **Description de l'univers** : {{ $('data').item.json.theme.description }}
 - **Vocabulaire thématique disponible** : {{ $('data').item.json.theme.vocabulary.join(", ") }}
+{{(()=>{
+  const instructionList = $('data').item.json.theme.complementaryInstructionList || [];
+  if (instructionList.length > 0) {
+    return '\n### Instructions complémentaires pour ce thème\n\n' +
+      instructionList.map(instruction =>
+        `- **${instruction.title}** : ${instruction.instruction}`
+      ).join('\n') + '\n';
+  }
+  return '';
+})()}}
 
 ### Lieu et ambiance de méditation
 - **Lieu de méditation** : {{ $('data').item.json.ambiance.immersion.name }}
@@ -155,7 +165,18 @@ La dernière scène doit préparer naturellement le remplacement de la méditati
         "{{ $('data').item.json.theme.vocabulary.join('", "')}}"
       ],
       "specific_instructions": {
-        "pokemonNames": "Noms de Pokémon adaptés au contexte narratif"
+{{(()=>{
+  const instructionList = $('data').item.json.theme.complementaryInstructionList || [];
+  const lines = [];
+  instructionList.forEach(instruction => {
+    if (instruction.metadata) {
+      Object.entries(instruction.metadata).forEach(([key, value]) => {
+        lines.push(`        "${key}": "${value}"`);
+      });
+    }
+  });
+  return lines.join(',\n') || '        // Aucune instruction spécifique pour ce thème';
+})()}}
       },
       "sensory_elements": {
         "visual": "Éléments originaux visuels du thème",
