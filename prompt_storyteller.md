@@ -154,6 +154,9 @@ La dernière scène doit préparer naturellement le remplacement de la méditati
       "example_theme_vocabulary": [
         "{{ $('data').item.json.theme.vocabulary.join('", "')}}"
       ],
+      "specific_instructions": {
+        "pokemonNames": "Noms de Pokémon adaptés au contexte narratif"
+      },
       "sensory_elements": {
         "visual": "Éléments originaux visuels du thème",
         "auditory": "Sons originaux du thème",
