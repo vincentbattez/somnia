@@ -15,10 +15,10 @@ Créer un récit narratif cohérent de 5 scènes progressives qui servira de bas
 {{(()=>{
   const instructionList = $('data').item.json.theme.complementaryInstructionList || [];
   if (instructionList.length > 0) {
-    return '\n### Instructions complémentaires pour ce thème\n\n' +
+    return '\n### Instructions complémentaires pour ce thème\n' +
       instructionList.map(instruction =>
         `- **${instruction.title}** : ${instruction.instruction}`
-      ).join('\n') + '\n';
+      ).join('\n');
   }
   return '';
 })()}}
@@ -163,92 +163,91 @@ La dernière scène doit préparer naturellement le remplacement de la méditati
       "theme_description": "{{ $('data').item.json.theme.description }}",
       "example_theme_vocabulary": [
         "{{ $('data').item.json.theme.vocabulary.join('", "')}}"
-      ],
-      "specific_instructions": {
-{{(()=>{
+      ]{{(()=>{
   const instructionList = $('data').item.json.theme.complementaryInstructionList || [];
+  if (instructionList.length === 0) return '';
   const lines = [];
   instructionList.forEach(instruction => {
     if (instruction.metadata) {
       Object.entries(instruction.metadata).forEach(([key, value]) => {
-        lines.push(`        "${key}": "${value}"`);
+        lines.push(`        "${key}": "[${value}]"`);
       });
     }
   });
-  return lines.join(',\n') || '        // Aucune instruction spécifique pour ce thème';
-})()}}
-      },
+  if (lines.length === 0) return '';
+  return ',\n      "specific_instructions": {\n' + lines.join(',\n') + '\n      }';
+})()}},
       "sensory_elements": {
-        "visual": "Éléments originaux visuels du thème",
-        "auditory": "Sons originaux du thème",
-        "tactile": "Sensations tactiles originales du thème",
-        "olfactory": "Odeurs originales thème",
-        "temperature": "Sensations thermiques originales du thème"
+        "visual": "[Éléments originaux visuels du thème"],
+        "auditory": "[Sons originaux du thème"],
+        "tactile": "[Sensations tactiles originales du thème"],
+        "olfactory": "[Odeurs originales thème"],
+        "temperature": "[Sensations thermiques originales du thème]"
       },
       "meditation_hints": {
-        "breathing_anchor": "Élément original du thème pouvant servir d'ancrage respiratoire",
-        "relaxation_focus": "Élément original du thème pouvant servir pour la détente"
+        "breathing_anchor": "[Élément original du thème pouvant servir d'ancrage respiratoire]",
+        "relaxation_focus": "[Élément original du thème pouvant servir pour la détente]"
       }
     },
     "location": {
       "location": "{{ $('data').item.json.ambiance.immersion.name }}",
       "location_description": "{{ $('data').item.json.ambiance.immersion.description }}",
       "sensory_elements": {
-        "visual": "Éléments originaux visuels du lieu",
-        "auditory": "Sons originaux du lieu",
-        "tactile": "Sensations tactiles originales du lieu",
-        "olfactory": "Odeurs originales du lieu",
-        "temperature": "Sensations thermiques originales du lieu"
+        "visual": "[Éléments originaux visuels du lieu]",
+        "auditory": "[Sons originaux du lieu]",
+        "tactile": "[Sensations tactiles originales du lieu]",
+        "olfactory": "[Odeurs originales du lieu]",
+        "temperature": "[Sensations thermiques originales du lieu]"
       },
       "meditation_hints": {
-        "breathing_anchor": "Élément original du lieu pouvant servir d'ancrage respiratoire",
-        "relaxation_focus": "Élément original du lieu pouvant servir pour la détente"
+        "breathing_anchor": "[Élément original du lieu pouvant servir d'ancrage respiratoire]",
+        "relaxation_focus": "[Élément original du lieu pouvant servir pour la détente]"
       }
     },
     "ambiance_sound": {
       "sound_ambiance": "{{ $('data').item.json.ambiance.label }}",
       "sound_description": "{{ $('data').item.json.ambiance.description }}",
       "sensory_elements": {
-        "visual": "Éléments originaux visuels associés au son",
-        "auditory": "Caractéristiques sonores originales de l'ambiance",
-        "tactile": "Sensations tactiles originales associées au son",
-        "olfactory": "Odeurs originales associées au son",
-        "temperature": "Sensations thermiques originales associées au son"
+        "visual": "[Éléments originaux visuels associés au son]",
+        "auditory": "[Caractéristiques sonores originales de l'ambiance]",
+        "tactile": "[Sensations tactiles originales associées au son]",
+        "olfactory": "[Odeurs originales associées au son]",
+        "temperature": "[Sensations thermiques originales associées au son]"
       },
       "meditation_hints": {
-        "breathing_anchor": "Élément original du son pouvant servir d'ancrage respiratoire",
-        "relaxation_focus": "Élément original du son pouvant servir pour la détente"
+        "breathing_anchor": "[Élément original du son pouvant servir d'ancrage respiratoire]",
+        "relaxation_focus": "[Élément original du son pouvant servir pour la détente]"
       }
     },
     "connections": {
-      "location_anchor": "Comment le récit s'ancre dans le lieu de méditation : {{ $('data').item.json.ambiance.immersion.name }}",
-      "connection_to_theme": "Comment le récit intègre le thème : {{ $('data').item.json.theme.label }}",
-      "connection_to_exploration": "Comment le récit explore progressivement les environs du lieu de méditation dans l'univers thématique : {{ $('data').item.json.theme.label }}",
-      "connection_to_comeback": "Comment le récit revient progressivement au lieu de méditation en passant par les lieux explorés",
-      "connection_to_sound": "Comment le récit prépare le remplacement de la méditation par l'ambiance sonore : {{ $('data').item.json.ambiance.label }}"
+      "location_anchor": "[Comment le récit s'ancre dans le lieu de méditation : {{ $('data').item.json.ambiance.immersion.name }}]",
+      "connection_to_theme": "[Comment le récit intègre le thème : {{ $('data').item.json.theme.label }}]",
+      "connection_to_exploration": "[Comment le récit explore progressivement les environs du lieu de méditation dans l'univers thématique : {{ $('data').item.json.theme.label }}]",
+      "connection_to_comeback": "[Comment le récit revient progressivement au lieu de méditation en passant par les lieux explorés]",
+      "connection_to_sound": "[Comment le récit prépare le remplacement de la méditation par l'ambiance sonore : {{ $('data').item.json.ambiance.label }}]"
     },
     "narrative": {
-      "arc_description": "Description brève de l'arc narratif global (1 phrase)",
+      "arc_description": "[Description brève de l'arc narratif global (1 phrase)]",
       "total_scenes": 5,
       "scenes": [
         {
           "scene_number": 1,
-          "title": "Titre court et évocateur",
-          "location": "Description précise du lieu",
-          "atmosphere": "Qualificatif d'ambiance (calme, paisible, serein, etc.)",
+          "title": "[Titre court et évocateur]",
+          "location": "[Description précise du lieu]",
+          "atmosphere": "[Qualificatif d'ambiance (calme, paisible, serein, etc.)]",
           "sensory_elements": {
-            "visual": "Éléments visuels dominants",
-            "auditory": "Sons présents",
-            "tactile": "Sensations tactiles",
-            "olfactory": "Odeurs (optionnel)",
-            "temperature": "Sensations thermiques (optionnel)"
+            "visual": "[Éléments visuels dominants]",
+            "auditory": "[Sons présents]",
+            "tactile": "[Sensations tactiles]",
+            "olfactory": "[Odeurs (optionnel)]",
+            "temperature": "[Sensations thermiques (optionnel)]"
           },
           "meditation_hints": {
-            "breathing_anchor": "Élément de la scène pouvant servir d'ancrage respiratoire",
-            "relaxation_focus": "Aspect à utiliser pour la détente"
+            "breathing_anchor": "[Élément de la scène pouvant servir d'ancrage respiratoire]",
+            "relaxation_focus": "[Aspect à utiliser pour la détente]"
           },
-          "narrative_text": "Texte narratif en prose (~45 mots), style poétique, temps présent, 2e personne (tu)",
-          "transition_to_next": "Description de comment cette scène mène naturellement à la suivante"
+          "narrative_text": "[Texte narratif en prose (~60 mots), style poétique, temps présent, 2e personne (tu)]",
+          "transition_to_next": "[Description de comment cette scène mène naturellement à la suivante]"
         },
         {
           "scene_number": 5,
@@ -265,7 +264,7 @@ La dernière scène doit préparer naturellement le remplacement de la méditati
             "relaxation_focus": "..."
           },
           "narrative_text": "...",
-          "transition_to_next": "Retour progressif au lieu de méditation, préparation du son qui remplace la méditation"
+          "transition_to_next": "[Retour progressif au lieu de méditation, préparation du son qui remplace la méditation]"
         }
       ]
     }
