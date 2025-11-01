@@ -30,7 +30,7 @@ Créer un récit narratif cohérent de 5 scènes progressives qui servira de bas
 - **Description du son** : {{ $('data').item.json.ambiance.description }}
 
 ### Contexte utilisateur
-- **Prénom** : {{$('data').item.json.user.person }}
+- **Auditoire** : {{$('data').item.json.user.person }}
 - **Durée de sommeil** : {{ $('data').item.json.user.sleepDuration }}
 
 ## Responsabilités
@@ -60,11 +60,26 @@ Créer un récit narratif cohérent de 5 scènes progressives qui servira de bas
 
 ## Règles de création
 
-### 1. Cohérence spatiale stricte
+### 1. Cohérence spatiale et transitions fluides
 - Chaque scène = un lieu précis et identifiable
 - Transitions géographiques logiques entre les scènes
-- Éviter les sauts temporels ou spatiaux abrupts (IMPORTANT)
 - Maintenir une continuité visuelle forte et claire
+- Éviter les sauts temporels ou spatiaux abrupts (IMPORTANT)
+
+**Éviter les sauts abrupts** :
+- ❌ "Tu es dans le refuge... Maintenant tu es au lac"
+- ✅ "Ton regard suit le sentier... qui descend vers le lac"
+
+**Techniques de transition** :
+1. **Transition par le regard**
+2. **Transition par le mouvement**
+3. **Transition par le son**
+4. **Transition par élément physique**
+
+**Éléments de continuité à intégrer** :
+- Un objet qui sert de pont
+- Un élément sensoriel qui persiste
+- Une progression spatiale logique (près → loin, haut → bas)
 
 ### 2. Vocabulaire sensoriel simple
 **✅ UTILISER :**
@@ -247,7 +262,11 @@ La dernière scène doit préparer naturellement le remplacement de la méditati
             "relaxation_focus": "[Aspect à utiliser pour la détente]"
           },
           "narrative_text": "[Texte narratif en prose (~60 mots), style poétique, temps présent, 2e personne (tu)]",
-          "transition_to_next": "[Description de comment cette scène mène naturellement à la suivante]"
+          "transition_to_next": "[Description DÉTAILLÉE incluant : 
+            - L'élément physique/sensoriel servant de pont
+            - Le mouvement du regard ou du corps
+            - La progression spatiale logique
+        ]"
         },
         {
           "scene_number": 5,

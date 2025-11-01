@@ -44,7 +44,7 @@ Transformer le récit narratif fourni par le Storyteller en une méditation guid
 - ✅ Créer un **ralentissement progressif** du rythme
 - ✅ Utiliser un **vocabulaire apaisant**
 - ✅ Maintenir la **cohérence** avec le ton et l'ambiance du récit
-- ✅ Remplace naturellement de la méditation par l'ambiance sonore ({{ $('data').item.json.ambiance.label }}) (partie 5)
+- ✅ Remplace naturellement la méditation par l'ambiance sonore ({{ $('data').item.json.ambiance.label }}) (partie 5)
 
 
 ### Tu n'es PAS responsable de ❌
